@@ -93,8 +93,7 @@ int sum(int x[], int n); //Sean Melone
 void demean(double x[], int n);
 int sum(int x[], int n);
 void demean(double x[], int n); //Chloe Sharpe
-void round(double x[], int n); 
-void round(double x[], int n);//Qingyao Fan
+void round(double x[], int n);
 void square(double x[], int n);//Kalani Pigao
 void normalize(double x[], int n); //Sylvia Boamah
 void normalize(double x[], int n);
@@ -119,9 +118,9 @@ void reverse(char s[]);
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
-void lowercase(char s[]);//Qingyao Fan
+void lowercase(char s[]);
 
-double taylorSeriesSine(double x);
+double taylorSeriesSine(double x);//Qingyao Fan
 double taylorSeriesCosine(double x);
 double taylorSeriesE(double x);
 
@@ -385,10 +384,13 @@ d=a+b+c;
 d=d/3;
 return d;
 };//Qingyao Fan
+	
 
-void lowercase(char s[]);//Qingyao Fan
-
-
+double taylorSeriesSine(double x){
+double a;
+a += pow (-1.0, x) * pow (a, 2*x+1) / factorial(2*n+1);
+return a;
+};//Qingyao Fan
 
 
 int min(int x[];int n){
