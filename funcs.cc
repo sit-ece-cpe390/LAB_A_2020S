@@ -11,39 +11,24 @@
 using namespace std;
 uint32_t sum(uint32_t a, uint32_t b); //Nathan Renner
 uint64_t prod(uint32_t a, uint32_t b); //Edgar Castaneda-Vargas
-uint32_t sumsq(uint32_t a, uint32_t b);
-uint64_t prod(uint32_t a, uint32_t b);
-uint32_t sum(uint32_t a, uint32_t b); // Nathan Renner 
+uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla
 uint64_t prod(uint32_t a, uint32_t b); //Matt Ross
-uint32_t sumsq(uint32_t a, uint32_t b);
 uint32_t countPrimes(uint32_t a, uint32_t b){ //James Parisi
-uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla 
-uint32_t countPrimes(uint32_t a, uint32_t b);
-bool isPrime(uint32_t p);
 void swap(uint32_t& a, uint32_t& b); //Chloe Sharpe
 bool isPrime(uint32_t p); // Sean Melone
-void swap(uint32_t& a, uint32_t& b);
 uint32_t gcd(uint32_t a, uint32_t b); //Sylvia Boamah
-uint32_t lcm(uint32_t a, uint32_t b); 
 uint32_t lcm(uint32_t a, uint32_t b); //Anisha Shin
 double fact(uint32_t n); //Logan Smith
-uint64_t sum(uint32_t n);
 double hypot(double a, double b); //Kalani Pigao
 double diffsq(double a, double b);
 double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c); //Andrew DeSanti
-double hypot(double a, double b);
-uint64_t sum(uint32_t n);
-double hypot(double a, double b); //Kalani Pigao
-double hypot(double a, double b);
 uint64_t sum(uint32_t n); //Andrew DeSanti
 double hypot(double a, double b):: //Kalani Pigao
-double diffsq(double a, double b);
 double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c);//Qingyao Fan
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
-double fact(uint32_t n); //Logan Smith
 /*
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
@@ -365,6 +350,16 @@ double mean(int a, int b, int c) //Andrew DeSanti
 
 }
 
+double fact(uint32_t n) //Logan Smith
+{
+	int product = 1;
+	for(int i = 1; i <= n; i++)
+	{
+		product *= i;
+	}
+	return product;
+}
+
 // ARRAY PROBLEMS
 
 double mean(int x[], int n){ // Nathan Renner
@@ -462,17 +457,6 @@ void squareRoot(double x[], int n) //Andrew DeSanti
 
 }
 
-double fact(uint32_t n) //Logan Smith
-{
-	int product = 1;
-	for(int i = 1; i <= n; i++)
-	{
-		product *= i;
-	}
-	return product;
-}
-<<<<<<< HEAD
-
 void reverse(int x[]; int n) //Logan Smith
 {
 	for(int i = 0; i < n/2; i++)
@@ -482,9 +466,6 @@ void reverse(int x[]; int n) //Logan Smith
 		x[(n-1) - i] = a;
 	}
 }	
-<<<<<<< HEAD
-=======
->>>>>>> 51b4132876afe606f29c62486e7141faa7991748
 
 void round(double x[], int n) { //Anisha Shin
  	for (int i = 0; i < n; i++) {
