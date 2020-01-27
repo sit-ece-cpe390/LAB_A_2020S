@@ -315,7 +315,10 @@ uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 		sum += i;
 	return sum;
 }; 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 43a1b5f37d0a25ef6892505752dfe0555e49d8d5
 double mean(double a, double b){
 	double m = (a+b)*0.5;
 	return m;
@@ -339,6 +342,10 @@ count++;
 		}
 	}
 	return count;
+<<<<<<< HEAD
+=======
+};
+>>>>>>> 43a1b5f37d0a25ef6892505752dfe0555e49d8d5
 
 uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 	uint32_t counter = 0;
