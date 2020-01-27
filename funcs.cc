@@ -306,6 +306,7 @@ uint64_t prod(uint32_t a, uint32_t b)
 
 double mean(double a, double b){
 	double m = (a+b)*0.5;
+	cout <<m;
 	return m;
 };
 
@@ -404,7 +405,7 @@ int min(int x[];int n){
 		}
 	}
 	return small;
-}
+};
 
 double prod(int x[], int n){ //James Parisi
 	double product = 1
