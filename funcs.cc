@@ -293,6 +293,9 @@ uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 	return a + b;
 }; 
 
+uint32_t sumsq(uint32_t a, uint32_t b){
+	return (a*a)+(b*b);
+	}
 
 // ARRAY PROBLEMS
 
@@ -302,3 +305,13 @@ double mean(int x[], int n){ // Nathan Renner
 		sum += x[i];
 	return sum/4.0;	
 }; 
+
+int min(int x[];int n){
+	int small = x[0];
+	for (int i=0; i<n; i++){
+		if (small > x[i]){
+			small = x[i];
+		}
+	}
+	return small;
+}
