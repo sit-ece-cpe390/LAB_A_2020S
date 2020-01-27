@@ -28,6 +28,12 @@ uint32_t lcm(uint32_t a, uint32_t b);
 uint32_t lcm(uint32_t a, uint32_t b); //Anisha Shin
 double fact(uint32_t n);
 uint64_t sum(uint32_t n);
+<<<<<<< HEAD
+double hypot(double a, double b): //Kalani Pigao
+double diffsq(double a, double b);
+double mean(int a, int b); //Serafin Fernandez
+double mean(int a, int b, int c); //Andrew DeSanti
+=======
 double hypot(double a, double b);
 uint64_t sum(uint32_t n);
 double hypot(double a, double b); //Kalani Pigao
@@ -37,6 +43,7 @@ double hypot(double a, double b):: //Kalani Pigao
 double diffsq(double a, double b);
 double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c);//Qingyao Fan
+>>>>>>> 300356cb1dd909ab905f236801a4b1bfc7be5f9e
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
 double fact(uint32_t n); //Logan Smith
@@ -291,6 +298,10 @@ uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 	return sum;
 }; 
 
+<<<<<<< HEAD
+double mean(int a, int b, int c) { //Andrew DeSanti
+	return (a + b + c)/3;
+=======
 uint64_t prod(uint32_t a, uint32_t b)
 { // Edgar Castaneda-Vargas
 	uint64_t product = 1;
@@ -347,10 +358,18 @@ uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 
 };
 
-double hypot(double a, double b) {
+double hypot(double a, double b) { //Kalani Pigao
 	return sqrt(a * a + b * b)
+>>>>>>> 300356cb1dd909ab905f236801a4b1bfc7be5f9e
 }
 
+
+double mean(int a, int b, int c) //Andrew DeSanti
+{
+
+	return(a + b + c)/3.0;
+
+}
 
 // ARRAY PROBLEMS
 
@@ -412,11 +431,31 @@ double prod(int x[], int n){ //James Parisi
 int sum(int x[], int n){ // Sean Melone
 	int sum = 0;
 	for (int i = 0; i < n; i++){
-		sum += x[i]
+		sum += x[i];
 	}
 	return sum;
+
+void square(double x[], int n){ //Kalani Pigao
+	for (int i = 0; i < n; i++){
+		x[i] = x[i] *x[i];
+	}
+}
+
 };
 
+<<<<<<< HEAD
+
+void squareRoot(double x[], int n) //Andrew DeSanti
+{
+
+	for(int i=0;i< n; i++)
+	{
+		x[i]=sqrt(x[i]);
+	}
+
+}
+
+=======
 double fact(uint32_t n) //Logan Smith
 {
 	int product = 1;
@@ -426,6 +465,7 @@ double fact(uint32_t n) //Logan Smith
 	}
 	return product;
 }
+<<<<<<< HEAD
 
 void round(double x[], int n) { //Anisha Shin
  	for (int i = 0; i < n; i++) {
@@ -443,3 +483,6 @@ void round(double x[], int n) { //Anisha Shin
 		}
 	}
 }	       
+=======
+>>>>>>> 58fca298088833b5de32f8ec7ee51b68a0e7919b
+>>>>>>> fd2d7ff95d37ebf8156750b98de4468d61d5cbc3
