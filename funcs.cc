@@ -361,7 +361,7 @@ double mean(int x[], int n){ // Nathan Renner
 	return sum/4.0;	
 }; 
 
-int max(int x[], int n)
+int max(int x[], int n) // Edgar Castaneda-Vargas
 {
 	int max_value = INT_MIN;
 
