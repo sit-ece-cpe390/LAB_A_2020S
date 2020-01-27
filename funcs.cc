@@ -10,8 +10,11 @@
 using namespace std;
 uint32_t sum(uint32_t a, uint32_t b); //Nathan Renner
 uint64_t prod(uint32_t a, uint32_t b);
+<<<<<<< HEAD
 uint32_t sumsq(uint32_t a, uint32_t b);
 uint32_t countPrimes(uint32_t a, uint32_t b); //James Parisi
+uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla 
+uint32_t countPrimes(uint32_t a, uint32_t b);
 bool isPrime(uint32_t p);
 void swap(uint32_t& a, uint32_t& b);
 uint32_t gcd(uint32_t a, uint32_t b);
@@ -66,8 +69,8 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 // array problems
 double mean(int x[], int n); // Nathan Renner
 int max(int x[], int n);
-int min(int x[], int n);
-double prod(int x[], int n);
+int min(int x[], int n); //Joshua Hornilla 
+double prod(int x[], int n); //James Parisi
 int sum(int x[], int n);
 void demean(double x[], int n);
 void normalize(double x[], int n);
