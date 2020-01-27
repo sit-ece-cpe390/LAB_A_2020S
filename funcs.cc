@@ -92,19 +92,17 @@ void normalize(double x[], int n);
 void round(double x[], int n);
 =======
 void normalize(double x[], int n);
-<<<<<<< HEAD
 void round(double x[], int n);
 void square(double x[], int n); //Kalani Pigao
-=======
 void round(double x[], int n); //Anisha Shin
 >>>>>>> bf961feddddd29d373294f93d8ef056f9f33fc1a
 void square(double x[], int n);
->>>>>>> bf961feddddd29d373294f93d8ef056f9f33fc1a
+void square(double x[], int n); //Logan Smith
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
 void reverse(int x[], int n);
 uint32_t randomElement(const int x[], int n);
-uint32_t countEvens(const int x[], int n);
+uint32_t countEvens(const int x[], int n); //Serafin Fernandez
 void addToEach(int x[], int n, int delta);
 
 void removeVowels(char s[]);
