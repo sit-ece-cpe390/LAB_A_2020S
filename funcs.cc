@@ -426,3 +426,20 @@ double fact(uint32_t n) //Logan Smith
 	}
 	return product;
 }
+
+void round(double x[], int n) { //Anisha Shin
+ 	for (int i = 0; i < n; i++) {
+		int integer = (int) x[i];
+		if (abs(x[i] - integer) < 0.5) {
+			x[i] = integer;
+		}
+		else {
+			if (x[i] > 0) {
+				x[i] = integer + 1;
+			}
+			else {
+				x[i] = integer - 1;
+			}
+		}
+	}
+}	       
