@@ -39,6 +39,7 @@ double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c);//Qingyao Fan
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
+double fact(uint32_t n); //Logan Smith
 /*
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
@@ -414,3 +415,10 @@ double prod(int x[], int n){ //James Parisi
 };
 >>>>>>> 795c236247703a1710cffcdb87bdca5a159b0725
 
+int sum(int x[], int n){ // Sean Melone
+	int sum = 0;
+	for (int i = 0; i < n; i++){
+		sum += x[i]
+	}
+	return sum;
+};
