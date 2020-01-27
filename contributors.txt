@@ -3,4 +3,9 @@ Sylvia Boamah
 =======
 Nathan Renner
 Edgar Castaneda-Vargas
+<<<<<<< HEAD
 >>>>>>> e08fe76d137ac3df092238eed12e80c45b41e548
+=======
+Matt Ross
+Kalani Pigao
+>>>>>>> dcbb62d41754368a1b616d4bad42182073672fa4
