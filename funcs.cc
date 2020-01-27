@@ -19,7 +19,7 @@ uint32_t countPrimes(uint32_t a, uint32_t b);
 bool isPrime(uint32_t p); // Sean Melone
 void swap(uint32_t& a, uint32_t& b);
 uint32_t gcd(uint32_t a, uint32_t b);
-uint32_t lcm(uint32_t a, uint32_t b);
+uint32_t lcm(uint32_t a, uint32_t b); //Anisha Shin
 double fact(uint32_t n);
 uint64_t sum(uint32_t n);
 double hypot(double a, double b);
@@ -83,7 +83,7 @@ void demean(double x[], int n);
 int sum(int x[], int n);
 void demean(double x[], int n); //Chloe Sharpe
 void normalize(double x[], int n);
-void round(double x[], int n);
+void round(double x[], int n); //Anisha Shin
 void square(double x[], int n);
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
