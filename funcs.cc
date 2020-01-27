@@ -14,7 +14,16 @@ uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 uint64_t prod(uint32_t a, uint32_t b);
 uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla 
 uint32_t countPrimes(uint32_t a, uint32_t b);
-bool isPrime(uint32_t p); // Sean Melone
+bool isPrime(uint32_t p); { // Sean Melone
+	for (int i = 2, i <= p, i++) {
+		if (p % i != 0){
+			return false;
+	}
+		else
+			break;
+}
+return true;
+};
 void swap(uint32_t& a, uint32_t& b);
 uint32_t gcd(uint32_t a, uint32_t b);
 uint32_t lcm(uint32_t a, uint32_t b);
