@@ -317,12 +317,12 @@ bool isPrime(uint32_t p); { //Sean Melone
 	}
 	return true;
 
-
+};
 uint32_t sumsq(uint32_t a, uint32_t b){
 	return (a*a)+(b*b);
 	}
 
-};
+
 uint32_t countPrimes(uint32_t a, uint32_t b) { // James Parisi
 	uint32_t count = 0;
 	for (uint32_t i = a; a <= b; a++) {
