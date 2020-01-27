@@ -12,14 +12,6 @@ uint32_t sum(uint32_t a, uint32_t b); // Nathan Renner
 uint64_t prod(uint32_t a, uint32_t b);
 uint32_t sumsq(uint32_t a, uint32_t b);
 uint32_t countPrimes(uint32_t a, uint32_t b){ //James Parisi
-	uint32_t count = 0;
-	for (uint32_t i = a; a <= b; a++){
-		if (isPrime(i)) {
-			count++;
-		}		
-	}
-	return count;
-};
 uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla 
 uint32_t countPrimes(uint32_t a, uint32_t b);
 bool isPrime(uint32_t p); //Chloe Sharpe
@@ -282,6 +274,17 @@ uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 	return a + b;
 }; 
 
+uint32_t countPrimes(uint32_t a, uint32_t b) { // James Parisi
+	uint32_t count = 0;
+	for (uint32_t i = a; a <= b; a++) {
+		if(isPrime(i)) {
+			count++;
+		}
+	}
+	return count;
+
+
+
 
 // ARRAY PROBLEMS
 
@@ -291,3 +294,12 @@ double mean(int x[], int n){ // Nathan Renner
 		sum += x[i];
 	return sum/4;	
 }; 
+
+double prod(int x[], int n){ //James Parisi
+	double product = 1
+	for(int i = 0; i < n; i++) {
+		product *= x[i];
+	}
+	return product;
+};
+
