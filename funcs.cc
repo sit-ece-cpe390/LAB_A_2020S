@@ -8,7 +8,9 @@
 #include <iostream>
 #include <cstdint>
 using namespace std;
-uint32_t sum(uint32_t a, uint32_t b); //Nathan Renner
+uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
+	return a + b;
+}; 
 uint64_t prod(uint32_t a, uint32_t b);
 uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla 
 uint32_t countPrimes(uint32_t a, uint32_t b);
@@ -64,12 +66,22 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 
 
 // array problems
-double mean(int x[], int n); // Nathan Renner
+double mean(int x[], int n){ // Nathan Renner
+	int sum = 0;	
+	for (int i = 0; i < n; i++)
+		sum += x[i];
+	return sum/4;	
+}; 
 int max(int x[], int n);
 int min(int x[], int n); //Joshua Hornilla 
 double prod(int x[], int n);
+<<<<<<< HEAD
 int sum(int x[], int n); //Sean Melone
 void demean(double x[], int n);
+=======
+int sum(int x[], int n);
+void demean(double x[], int n); //Chloe Sharpe
+>>>>>>> edee8bf9ff3eaaa7d17b93aee9adeb94c706c84a
 void normalize(double x[], int n);
 void round(double x[], int n);
 void square(double x[], int n);
