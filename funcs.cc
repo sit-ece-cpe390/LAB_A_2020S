@@ -22,8 +22,8 @@ uint32_t countPrimes(uint32_t a, uint32_t b){ //James Parisi
 };
 uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla 
 uint32_t countPrimes(uint32_t a, uint32_t b);
-bool isPrime(uint32_t p);
-void swap(uint32_t& a, uint32_t& b); //Chloe Sharpe
+bool isPrime(uint32_t p); //Chloe Sharpe
+void swap(uint32_t& a, uint32_t& b);
 bool isPrime(uint32_t p); // Sean Melone
 void swap(uint32_t& a, uint32_t& b);
 <<<<<<< HEAD
