@@ -405,7 +405,7 @@ int min(int x[];int n){
 		}
 	}
 	return small;
-}
+};
 
 double prod(int x[], int n){ //James Parisi
 	double product = 1
