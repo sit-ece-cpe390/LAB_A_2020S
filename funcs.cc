@@ -11,12 +11,30 @@ using namespace std;
 uint32_t sum(uint32_t a, uint32_t b); // Nathan Renner 
 uint64_t prod(uint32_t a, uint32_t b);
 uint32_t sumsq(uint32_t a, uint32_t b);
-uint32_t countPrimes(uint32_t a, uint32_t b); //James Parisi
+uint32_t countPrimes(uint32_t a, uint32_t b){ //James Parisi
 uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla 
 uint32_t countPrimes(uint32_t a, uint32_t b);
+<<<<<<< HEAD
+<<<<<<< HEAD
+bool isPrime(uint32_t p); { // Sean Melone
+	for (int i = 2, i <= p, i++) {
+		if (p % i != 0){
+			return false;
+	}
+		else
+			break;
+}
+return true;
+};
+=======
+bool isPrime(uint32_t p); //Chloe Sharpe
+void swap(uint32_t& a, uint32_t& b);
+=======
 bool isPrime(uint32_t p);
 void swap(uint32_t& a, uint32_t& b); //Chloe Sharpe
+>>>>>>> 141485ebe5740bad40a2da736788e6ed7633c830
 bool isPrime(uint32_t p); // Sean Melone
+>>>>>>> 0d56a2dfc5a43e9971f8905e6d173f39664bf73d
 void swap(uint32_t& a, uint32_t& b);
 =======
 <<<<<<< HEAD
@@ -27,7 +45,7 @@ uint32_t gcd(uint32_t a, uint32_t b);
 >>>>>>> 0d56a2dfc5a43e9971f8905e6d173f39664bf73d
 uint32_t lcm(uint32_t a, uint32_t b); //Anisha Shin
 >>>>>>> bf961feddddd29d373294f93d8ef056f9f33fc1a
-double fact(uint32_t n);
+double fact(uint32_t n); //Logan Smith
 <<<<<<< HEAD
 uint64_t sum(uint32_t n);
 <<<<<<< HEAD
@@ -71,7 +89,7 @@ class Vec3d {
 public:
 	double x,y,z;
 	Vec3d(double x, double y, double z) : x(x), y(y), z(z) {}
-	friend ostream& operator<<(ostream& s, const Vec3d& v) {
+	friend ostream& operator<<(ostream& s, const Vec3d& iv) {
 		return s << v.x << "," << v.y << "," << v.z;
 	}
 };
@@ -303,6 +321,24 @@ double mean(double a, double b){
 	return m;
 };
 
+bool isPrime(uint32_t p); { //Sean Melone
+	for (int i = 2; i <= p; i++){
+		if(p % i == 0){
+			return false;
+			break;
+		}
+	}
+	return true;
+
+};
+uint32_t countPrimes(uint32_t a, uint32_t b) { // James Parisi
+	uint32_t count = 0;
+	for (uint32_t i = a; a <= b; a++) {
+		if(isPrime(i)) {
+count++;
+		}
+	}
+	return count;
 
 uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 	uint32_t counter = 0;
@@ -314,7 +350,6 @@ uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 			return counter;
 		}
 	}
-}
 
 
 // ARRAY PROBLEMS
@@ -325,3 +360,12 @@ double mean(int x[], int n){ // Nathan Renner
 		sum += x[i];
 	return sum/4.0;	
 }; 
+
+double prod(int x[], int n){ //James Parisi
+	double product = 1
+	for(int i = 0; i < n; i++) {
+		product *= x[i];
+	}
+	return product;
+};
+
