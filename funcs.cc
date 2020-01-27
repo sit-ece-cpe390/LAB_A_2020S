@@ -28,7 +28,7 @@ uint32_t lcm(uint32_t a, uint32_t b);
 uint32_t lcm(uint32_t a, uint32_t b); //Anisha Shin
 double fact(uint32_t n);
 uint64_t sum(uint32_t n);
-double hypot(double a, double b): //Kalani Pigao
+double hypot(double a, double b); //Kalani Pigao
 double diffsq(double a, double b);
 double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c); //Andrew DeSanti
