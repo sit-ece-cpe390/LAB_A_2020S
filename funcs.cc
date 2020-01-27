@@ -152,6 +152,7 @@ void print(const int x[], int n) {
 int main() {
 	cout << sum(1, 3) << ' ' << sum(1, 100) << '\n'; // should work no problem, right?
 	cout << sum(1, 1000000) << '\n'; // what should this be? Don't assume it's right, check!
+					 // this will overflow for the 1-1000000 input.
 
 	cout << prod(2, 5) << '\n'; // 2*3*4*5 = 120
 	cout << prod(3, 10) << '\n';
@@ -290,15 +291,18 @@ int main() {
 
 // NON-ARRAY PROBLEMS
 
-uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
-	return a + b;
+uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner 
+	uint32_t sum = 0;	       // This function will overflow for the 1-1000000 input.
+	for (int i = a; i <= b; i++)
+		sum += i;
+	return sum;
 }; 
-<<<<<<< HEAD
+
 double mean(double a, double b){
 	double m = (a+b)*0.5;
 	return m;
 };
-=======
+
 
 uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 	uint32_t counter = 0;
@@ -312,7 +316,7 @@ uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 	}
 }
 
->>>>>>> a088655361addf68bb987b3ab5f56be8b29eaa08
+
 // ARRAY PROBLEMS
 
 double mean(int x[], int n){ // Nathan Renner
