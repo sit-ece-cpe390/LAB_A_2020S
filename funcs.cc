@@ -13,7 +13,7 @@ uint64_t prod(uint32_t a, uint32_t b);
 uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla 
 uint32_t countPrimes(uint32_t a, uint32_t b);
 bool isPrime(uint32_t p);
-void swap(uint32_t& a, uint32_t& b);
+void swap(uint32_t& a, uint32_t& b); //Chloe Sharpe
 uint32_t gcd(uint32_t a, uint32_t b);
 uint32_t lcm(uint32_t a, uint32_t b);
 double fact(uint32_t n);
