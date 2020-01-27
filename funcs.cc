@@ -13,7 +13,15 @@ uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 }; 
 uint64_t prod(uint32_t a, uint32_t b);
 uint32_t sumsq(uint32_t a, uint32_t b);
-uint32_t countPrimes(uint32_t a, uint32_t b); //James Parisi
+uint32_t countPrimes(uint32_t a, uint32_t b){ //James Parisi
+	uint32_t count = 0;
+	for (uint32_t i = a; a <= b; a++){
+		if (isPrime(i)) {
+			count++;
+		}		
+	}
+	return count;
+};
 uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla 
 uint32_t countPrimes(uint32_t a, uint32_t b);
 bool isPrime(uint32_t p); // Sean Melone
@@ -55,7 +63,7 @@ class Vec3d {
 public:
 	double x,y,z;
 	Vec3d(double x, double y, double z) : x(x), y(y), z(z) {}
-	friend ostream& operator<<(ostream& s, const Vec3d& v) {
+	friend ostream& operator<<(ostream& s, const Vec3d& iv) {
 		return s << v.x << "," << v.y << "," << v.z;
 	}
 };
