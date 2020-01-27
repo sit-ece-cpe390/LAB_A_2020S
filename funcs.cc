@@ -14,10 +14,6 @@ uint32_t sumsq(uint32_t a, uint32_t b);
 uint32_t countPrimes(uint32_t a, uint32_t b){ //James Parisi
 uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla 
 uint32_t countPrimes(uint32_t a, uint32_t b);
-bool isPrime(uint32_t p);
-void swap(uint32_t& a, uint32_t& b); //Chloe Sharpe
-bool isPrime(uint32_t p); // Sean Melone
-void swap(uint32_t& a, uint32_t& b);
 double diffsq(double a, double b);
 double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c);
@@ -260,14 +256,36 @@ double mean(double a, double b){
 	return m;
 };
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+bool isPrime(uint32_t p); { //Sean Melone
+	for (int i = 2; i <= p; i++){
+		if(p % i == 0){
+			return false;
+			break;
+		}
+	}
+	return true;
+
+};
+>>>>>>> 024492c36139b6c57dba691cb895853e623b54df
 uint32_t countPrimes(uint32_t a, uint32_t b) { // James Parisi
 	uint32_t count = 0;
 	for (uint32_t i = a; a <= b; a++) {
 		if(isPrime(i)) {
+<<<<<<< HEAD
 			count++;
 		}
 	}
 	return count;
+=======
+count++;
+		}
+	}
+	return count;
+>>>>>>> 141485ebe5740bad40a2da736788e6ed7633c830
+>>>>>>> 024492c36139b6c57dba691cb895853e623b54df
 };
 
 uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
