@@ -300,6 +300,7 @@ uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 
 double mean(double a, double b){
 	double m = (a+b)*0.5;
+	cout <<m;
 	return m;
 };
 
