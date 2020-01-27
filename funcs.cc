@@ -331,7 +331,7 @@ uint32_t countPrimes(uint32_t a, uint32_t b) { // James Parisi
 		}
 	}
 	return count;
-};
+}
 
 
 uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
@@ -407,7 +407,7 @@ double prod(int x[], int n){ //James Parisi
 		product *= x[i];
 	}
 	return product;
-};
+}
 
 int sum(int x[], int n){ // Sean Melone
 	int sum = 0;
@@ -416,3 +416,13 @@ int sum(int x[], int n){ // Sean Melone
 	}
 	return sum;
 };
+
+double fact(uint32_t n) //Logan Smith
+{
+	int product = 1;
+	for(int i = 1; i <= n; i++)
+	{
+		product *= i;
+	}
+	return product;
+}
