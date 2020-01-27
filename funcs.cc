@@ -431,7 +431,7 @@ double prod(int x[], int n){ //James Parisi
 int sum(int x[], int n){ // Sean Melone
 	int sum = 0;
 	for (int i = 0; i < n; i++){
-		sum += x[i]
+		sum += x[i];
 	}
 	return sum;
 };
