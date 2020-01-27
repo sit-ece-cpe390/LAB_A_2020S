@@ -9,6 +9,10 @@
 #include <cstdint>
 #include <cmath>
 using namespace std;
+uint32_t sum(uint32_t a, uint32_t b); //Nathan Renner
+uint64_t prod(uint32_t a, uint32_t b); //Edgar Castaneda-Vargas
+uint32_t sumsq(uint32_t a, uint32_t b);
+uint64_t prod(uint32_t a, uint32_t b);
 uint32_t sum(uint32_t a, uint32_t b); // Nathan Renner 
 uint64_t prod(uint32_t a, uint32_t b); //Matt Ross
 uint32_t sumsq(uint32_t a, uint32_t b);
@@ -35,6 +39,7 @@ double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c);//Qingyao Fan
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
+double fact(uint32_t n); //Logan Smith
 /*
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
@@ -75,6 +80,10 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 
 
 // array problems
+double mean(int x[], int n); // Nathan Renner
+int max(int x[], int n); // Edgar Castaneda-Vargas
+int min(int x[], int n);
+int max(int x[], int n);
 double mean(int x[], int n); // Nathan Renner 
 int max(int x[], int n); // Matt Ross
 int min(int x[], int n); //Joshua Hornilla 
@@ -84,32 +93,19 @@ int sum(int x[], int n); //Sean Melone
 void demean(double x[], int n);
 int sum(int x[], int n);
 void demean(double x[], int n); //Chloe Sharpe
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 void round(double x[], int n); 
+void round(double x[], int n);//Qingyao Fan
 void square(double x[], int n);//Kalani Pigao
-=======
-<<<<<<< HEAD
 void normalize(double x[], int n); //Sylvia Boamah
-=======
->>>>>>> edee8bf9ff3eaaa7d17b93aee9adeb94c706c84a
 void normalize(double x[], int n);
->>>>>>> 69065503247b2b98d7d58afd9207a6bc5579f54d
 void round(double x[], int n);
->>>>>>> 0d56a2dfc5a43e9971f8905e6d173f39664bf73d
-=======
-=======
->>>>>>> 795c236247703a1710cffcdb87bdca5a159b0725
 void normalize(double x[], int n);
 void round(double x[], int n);
 void square(double x[], int n); //Kalani Pigao
 void round(double x[], int n); //Anisha Shin
 void squareRoot(double x[], int n);//Andrew DeSanti
 void square(double x[], int n);
-<<<<<<< HEAD
 void squareRoot(double x[], int n);
-=======
 void square(double x[], int n); //Logan Smith
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
@@ -283,11 +279,9 @@ int main() {
 
 }
 
-<<<<<<< HEAD
 viod squareRoot{
 
 
-=======
 // NON-ARRAY PROBLEMS
 
 uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner 
@@ -297,6 +291,15 @@ uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 	return sum;
 }; 
 
+uint64_t prod(uint32_t a, uint32_t b)
+{ // Edgar Castaneda-Vargas
+	uint64_t product = 1;
+	for (uint32_t i = a; i <= b; i++)
+	{
+		product *= i;
+	}
+	return product;
+}
 
 double mean(double a, double b){
 	double m = (a+b)*0.5;
@@ -323,11 +326,11 @@ uint32_t countPrimes(uint32_t a, uint32_t b) { // James Parisi
 	uint32_t count = 0;
 	for (uint32_t i = a; a <= b; a++) {
 		if(isPrime(i)) {
-count++;
+			count++;
 		}
 	}
 	return count;
-
+};
 
 
 uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
@@ -356,8 +359,20 @@ double mean(int x[], int n){ // Nathan Renner
 		sum += x[i];
 	return sum/4.0;	
 }; 
-<<<<<<< HEAD
->>>>>>> 0d56a2dfc5a43e9971f8905e6d173f39664bf73d
+
+int max(int x[], int n)
+{
+	int max_value = INT_MIN;
+
+	for (int i = 0; i < n; i++)
+	{
+		if (x[i] > max_value)
+		{
+			max_value = x[i];
+		}
+	}
+	return max_value;
+}
 
 
 
@@ -392,5 +407,11 @@ double prod(int x[], int n){ //James Parisi
 	}
 	return product;
 };
->>>>>>> 795c236247703a1710cffcdb87bdca5a159b0725
 
+int sum(int x[], int n){ // Sean Melone
+	int sum = 0;
+	for (int i = 0; i < n; i++){
+		sum += x[i]
+	}
+	return sum;
+};
