@@ -20,6 +20,7 @@ double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c);
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
+double fact(uint32_t n); //Logan Smith
 /*
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
