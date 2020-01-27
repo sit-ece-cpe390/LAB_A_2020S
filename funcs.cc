@@ -27,7 +27,7 @@ uint32_t gcd(uint32_t a, uint32_t b);
 >>>>>>> 0d56a2dfc5a43e9971f8905e6d173f39664bf73d
 uint32_t lcm(uint32_t a, uint32_t b); //Anisha Shin
 >>>>>>> bf961feddddd29d373294f93d8ef056f9f33fc1a
-double fact(uint32_t n);
+double fact(uint32_t n); //Logan Smith
 <<<<<<< HEAD
 uint64_t sum(uint32_t n);
 <<<<<<< HEAD
