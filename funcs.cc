@@ -93,8 +93,8 @@ int sum(int x[], int n);
 void demean(double x[], int n); //Chloe Sharpe
 <<<<<<< HEAD
 <<<<<<< HEAD
-void round(double x[], int n); //Kalani Pigao
-void square(double x[], int n);
+void round(double x[], int n);
+void square(double x[], int n);//Kalani Pigao
 =======
 <<<<<<< HEAD
 void normalize(double x[], int n); //Sylvia Boamah
