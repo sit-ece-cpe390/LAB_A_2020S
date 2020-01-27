@@ -260,8 +260,8 @@ uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 // ARRAY PROBLEMS
 
 double mean(int x[], int n){ // Nathan Renner
-	int sum = 0;	
+	double sum = 0;	
 	for (int i = 0; i < n; i++)
 		sum += x[i];
-	return sum/4;	
+	return sum/4.0;	
 }; 
