@@ -18,8 +18,6 @@ bool isPrime(uint32_t p);
 void swap(uint32_t& a, uint32_t& b); //Chloe Sharpe
 bool isPrime(uint32_t p); // Sean Melone
 void swap(uint32_t& a, uint32_t& b);
-<<<<<<< HEAD
-uint32_t gcd(uint32_t a, uint32_t b); //Kalani Pigao
 =======
 <<<<<<< HEAD
 uint32_t gcd(uint32_t a, uint32_t b); //Sylvia Boamah
@@ -34,22 +32,17 @@ double fact(uint32_t n);
 <<<<<<< HEAD
 uint64_t sum(uint32_t n);
 double hypot(double a, double b);
-=======
-=======
->>>>>>> 4baf56288582ce6d03995833e15a0c2adf550f79
 uint64_t sum(uint32_t n);
+<<<<<<< HEAD
+double hypot(double a, double b); //Kalani Pigao
+=======
 double hypot(double a, double b);
 =======
 uint64_t sum(uint32_t n); //Andrew DeSanti
-double hypot(double a, double b): //Kalani Pigao
-<<<<<<< HEAD
->>>>>>> 0d56a2dfc5a43e9971f8905e6d173f39664bf73d
-=======
->>>>>>> 9c73957f27dec8092aa5c94611a67b3cfca82341
->>>>>>> 4baf56288582ce6d03995833e15a0c2adf550f79
+double hypot(double a, double b):: //Kalani Pigao
 double diffsq(double a, double b);
 double mean(int a, int b); //Serafin Fernandez
-double mean(int a, int b, int c);
+double mean(int a, int b, int c);//Qingyao Fan
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
 /*
@@ -58,7 +51,7 @@ double trigIdentity(double x);
 */
 void quadraticEquation(double a, double b, double c, double& x1, double& x2);
 
-double area(double x1, double y1, double x2, double y2, double x3, double y3);//	Qingyao Fan
+double area(double x1, double y1, double x2, double y2, double x3, double y3);
 double area(double x1, double y1,
 						double x2, double y2,
 						double x3, double y3,
@@ -309,8 +302,26 @@ viod squareRoot{
 uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 	return a + b;
 }; 
+<<<<<<< HEAD
+double mean(double a, double b){
+	double m = (a+b)*0.5;
+	return m;
+};
+=======
 
+uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
+	uint32_t counter = 0;
+	bool lcmFound = false;
+	while (lcmFound == false) {
+		counter++;
+		if (counter % a == 0 && counter % b == 0) {
+			lcmFound = true;
+			return counter;
+		}
+	}
+}
 
+>>>>>>> a088655361addf68bb987b3ab5f56be8b29eaa08
 // ARRAY PROBLEMS
 
 double mean(int x[], int n){ // Nathan Renner
@@ -320,3 +331,21 @@ double mean(int x[], int n){ // Nathan Renner
 	return sum/4.0;	
 }; 
 >>>>>>> 0d56a2dfc5a43e9971f8905e6d173f39664bf73d
+
+
+
+
+double mean(int a, int b, int c);//Qingyao Fan
+
+double mean(int a, int b, int c){
+int d;
+d=a+b+c;
+d=d/3;
+return d;
+};//Qingyao Fan
+
+
+
+void round(double x[], int n);//Qingyao Fan
+void round(double x[], int n);//Qingyao Fan
+
