@@ -7,6 +7,7 @@
 */
 #include <iostream>
 #include <cstdint>
+#include <cmath>
 using namespace std;
 uint32_t sum(uint32_t a, uint32_t b); // Nathan Renner 
 uint64_t prod(uint32_t a, uint32_t b); //Matt Ross
@@ -266,7 +267,15 @@ uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 			return counter;
 		}
 	}
+<<<<<<< HEAD
+};
 
+double hypot(double a, double b) {
+	return sqrt(a * a + b * b)
+}
+=======
+
+>>>>>>> fce2061dafe77a91ce6cd1dddb7a6416714073ad
 
 // ARRAY PROBLEMS
 
