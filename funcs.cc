@@ -306,8 +306,11 @@ double mean(double a, double b){
 	cout <<m;
 	return m;
 };
-
-
+void swap(uint32_t& a, uint32_t& b) { //Chloe Sharpe
+	int c = a;
+	a = b;
+	b = c;
+};
 bool isPrime(uint32_t p); { //Sean Melone
 	for (int i = 2; i <= p; i++){
 		if(p % i == 0){
@@ -360,7 +363,19 @@ double mean(int x[], int n){ // Nathan Renner
 		sum += x[i];
 	return sum/4.0;	
 }; 
+void demean(double x[], int n){ //Chloe Sharpe
 
+	double sum = 0;
+	for(int i = 0; i < n; i++){
+		sum += x[i];
+	}	
+	
+	double mean = sum/n;
+
+	for(int i = 0; i < n; i++){
+		x[i] -= mean;
+	}	
+};	
 int max(int x[], int n) // Edgar Castaneda-Vargas
 {
 	int max_value = INT_MIN;
