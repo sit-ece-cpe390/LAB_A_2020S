@@ -109,6 +109,7 @@ void print(const int x[], int n) {
 int main() {
 	cout << sum(1, 3) << ' ' << sum(1, 100) << '\n'; // should work no problem, right?
 	cout << sum(1, 1000000) << '\n'; // what should this be? Don't assume it's right, check!
+					 // this will overflow for the 1-1000000 input.
 
 	cout << prod(2, 5) << '\n'; // 2*3*4*5 = 120
 	cout << prod(3, 10) << '\n';
@@ -247,46 +248,13 @@ int main() {
 
 // NON-ARRAY PROBLEMS
 
-uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
-	return a + b;
+uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner 
+	uint32_t sum = 0;	       // This function will overflow for the 1-1000000 input.
+	for (int i = a; i <= b; i++)
+		sum += i;
+	return sum;
 }; 
-<<<<<<< HEAD
-double mean(double a, double b){
-	double m = (a+b)*0.5;
-	return m;
-};
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-bool isPrime(uint32_t p); { //Sean Melone
-	for (int i = 2; i <= p; i++){
-		if(p % i == 0){
-			return false;
-			break;
-		}
-	}
-	return true;
-
-};
->>>>>>> 024492c36139b6c57dba691cb895853e623b54df
-uint32_t countPrimes(uint32_t a, uint32_t b) { // James Parisi
-	uint32_t count = 0;
-	for (uint32_t i = a; a <= b; a++) {
-		if(isPrime(i)) {
-<<<<<<< HEAD
-			count++;
-		}
-	}
-	return count;
-=======
-count++;
-		}
-	}
-	return count;
->>>>>>> 141485ebe5740bad40a2da736788e6ed7633c830
->>>>>>> 024492c36139b6c57dba691cb895853e623b54df
-};
+52dfe0555e49d8d5
 
 uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 	uint32_t counter = 0;
@@ -298,7 +266,8 @@ uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 			return counter;
 		}
 	}
-};
+
+
 // ARRAY PROBLEMS
 
 double mean(int x[], int n){ // Nathan Renner
