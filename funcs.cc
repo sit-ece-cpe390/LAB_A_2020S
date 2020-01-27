@@ -26,7 +26,7 @@ void swap(uint32_t& a, uint32_t& b);
 uint32_t gcd(uint32_t a, uint32_t b); //Sylvia Boamah
 uint32_t lcm(uint32_t a, uint32_t b); 
 uint32_t lcm(uint32_t a, uint32_t b); //Anisha Shin
-double fact(uint32_t n);
+double fact(uint32_t n); //Logan Smith
 uint64_t sum(uint32_t n);
 <<<<<<< HEAD
 double hypot(double a, double b): //Kalani Pigao
@@ -113,10 +113,10 @@ void round(double x[], int n); //Anisha Shin
 void squareRoot(double x[], int n);//Andrew DeSanti
 void square(double x[], int n);
 void squareRoot(double x[], int n);
-void square(double x[], int n); //Logan Smith
+void square(double x[], int n);
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
-void reverse(int x[], int n);
+void reverse(int x[], int n); //Logan Smith
 uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n); //Serafin Fernandez
 void addToEach(int x[], int n, int delta);
@@ -480,6 +480,16 @@ double fact(uint32_t n) //Logan Smith
 	}
 	return product;
 }
+
+void reverse(int x[]; int n) //Logan Smith
+{
+	for(int i = 0; i < n/2; i++)
+	{
+		int a = x[i];
+		x[i] = x[(n-1) - i];
+		x[(n-1) - i] = a;
+	}
+}	
 <<<<<<< HEAD
 
 void round(double x[], int n) { //Anisha Shin
