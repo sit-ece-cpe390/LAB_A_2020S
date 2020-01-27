@@ -1,6 +1,7 @@
 Chloe Sharpe
 Nathan Renner
 Edgar Castaneda-Vargas
+Qingyao Fan
 Sylvia Boamah
 Nathan Renner
 Edgar Castaneda-Vargas
@@ -11,3 +12,6 @@ James Parisi
 Joshua Hornilla`
 Serafin Fernandez
 Anisha Shin
+Sean Melone
+:w
+Logan Smith
