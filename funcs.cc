@@ -70,7 +70,7 @@ int min(int x[], int n); //Joshua Hornilla
 double prod(int x[], int n);
 int sum(int x[], int n);
 void demean(double x[], int n); //Chloe Sharpe
-void normalize(double x[], int n);
+void normalize(double x[], int n); //Sylvia Boamah
 void round(double x[], int n);
 void square(double x[], int n);
 void squareRoot(double x[], int n);
