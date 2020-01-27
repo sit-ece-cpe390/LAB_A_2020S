@@ -7,6 +7,7 @@
 */
 #include <iostream>
 #include <cstdint>
+#include <cmath>
 using namespace std;
 uint32_t sum(uint32_t a, uint32_t b); // Nathan Renner 
 uint64_t prod(uint32_t a, uint32_t b);
@@ -350,6 +351,11 @@ uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 		}
 	}
 };
+
+double hypot(double a, double b) {
+	return sqrt(a * a + b * b)
+}
+
 // ARRAY PROBLEMS
 
 double mean(int x[], int n){ // Nathan Renner
