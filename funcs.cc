@@ -80,7 +80,6 @@ void demean(double x[], int n); //Chloe Sharpe
 void normalize(double x[], int n);
 void round(double x[], int n);
 void square(double x[], int n); //Kalani Pigao
-=======
 void round(double x[], int n); //Anisha Shin
 void square(double x[], int n);
 void squareRoot(double x[], int n);
