@@ -274,6 +274,17 @@ uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 	return a + b;
 }; 
 
+uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
+	uint32_t counter = 0;
+	bool lcmFound = false;
+	while (lcmFound == false) {
+		counter++;
+		if (counter % a == 0 && counter % b == 0) {
+			lcmFound = true;
+			return counter;
+		}
+	}
+}
 
 // ARRAY PROBLEMS
 
