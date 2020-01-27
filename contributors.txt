@@ -7,11 +7,7 @@ Edgar Castaneda-Vargas
 Matt Ross
 Kalani Pigao
 James Parisi
-<<<<<<< HEAD
->>>>>>> d61e8e103f63de41eb3b9394760a3aa1d357df3d
-Andrew DeSanti
-=======
+Joshua Hornilla`
 Serafin Fernandez
 Anisha Shin
->>>>>>> 9ecb5b0cafc352b376a9be71dd0652d499b663a7
-
+Andrew DeSanti
