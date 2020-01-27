@@ -18,8 +18,6 @@ bool isPrime(uint32_t p);
 void swap(uint32_t& a, uint32_t& b); //Chloe Sharpe
 bool isPrime(uint32_t p); // Sean Melone
 void swap(uint32_t& a, uint32_t& b);
-<<<<<<< HEAD
-uint32_t gcd(uint32_t a, uint32_t b); //Kalani Pigao
 =======
 <<<<<<< HEAD
 uint32_t gcd(uint32_t a, uint32_t b); //Sylvia Boamah
