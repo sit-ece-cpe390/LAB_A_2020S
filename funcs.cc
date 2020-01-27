@@ -375,9 +375,6 @@ int max(int x[], int n) // Edgar Castaneda-Vargas
 }
 
 
-
-
-
 double mean(int a, int b, int c){
 int d;
 d=a+b+c;
