@@ -65,7 +65,7 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 
 // array problems
 double mean(int x[], int n); // Nathan Renner
-int max(int x[], int n);
+int max(int x[], int n); // Edgar Castaneda-Vargas
 int min(int x[], int n);
 double prod(int x[], int n);
 int sum(int x[], int n);
