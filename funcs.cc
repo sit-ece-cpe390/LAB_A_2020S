@@ -20,7 +20,7 @@ uint32_t gcd(uint32_t a, uint32_t b);
 uint32_t lcm(uint32_t a, uint32_t b);
 double fact(uint32_t n);
 uint64_t sum(uint32_t n);
-double hypot(double a, double b);
+double hypot(double a, double b): //Kalani Pigao
 double diffsq(double a, double b);
 double mean(int a, int b);
 double mean(int a, int b, int c);
@@ -84,7 +84,7 @@ void demean(double x[], int n); //Chloe Sharpe
 >>>>>>> edee8bf9ff3eaaa7d17b93aee9adeb94c706c84a
 void normalize(double x[], int n);
 void round(double x[], int n);
-void square(double x[], int n);
+void square(double x[], int n); //Kalani Pigao
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
 void reverse(int x[], int n);
