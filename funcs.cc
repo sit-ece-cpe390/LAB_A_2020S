@@ -87,7 +87,7 @@ void demean(double x[], int n); //Chloe Sharpe
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-void round(double x[], int n);//Qingyao Fan
+void round(double x[], int n); 
 void square(double x[], int n);//Kalani Pigao
 =======
 <<<<<<< HEAD
@@ -123,7 +123,7 @@ void reverse(char s[]);
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
-void lowercase(char s[]);
+void lowercase(char s[]);//Qingyao Fan
 
 double taylorSeriesSine(double x);
 double taylorSeriesCosine(double x);
@@ -362,7 +362,6 @@ double mean(int x[], int n){ // Nathan Renner
 
 
 
-double mean(int a, int b, int c);//Qingyao Fan
 
 double mean(int a, int b, int c){
 int d;
@@ -371,11 +370,9 @@ d=d/3;
 return d;
 };//Qingyao Fan
 
+void lowercase(char s[]);//Qingyao Fan
 
 
-void round(double x[], int n);//Qingyao Fan
-void round(double x[], int n);//Qingyao Fan
-=======
 
 
 int min(int x[];int n){
