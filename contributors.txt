@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 Kalani Pigao
+=======
+Nathan Renner
+Edgar Castaneda-Vargas
+>>>>>>> e08fe76d137ac3df092238eed12e80c45b41e548
