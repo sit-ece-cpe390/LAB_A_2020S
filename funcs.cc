@@ -27,9 +27,9 @@ uint32_t lcm(uint32_t a, uint32_t b); //Anisha Shin
 >>>>>>> bf961feddddd29d373294f93d8ef056f9f33fc1a
 double fact(uint32_t n);
 uint64_t sum(uint32_t n);
-double hypot(double a, double b);
+double hypot(double a, double b): //Kalani Pigao
 double diffsq(double a, double b);
-double mean(int a, int b);
+double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c);
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
@@ -92,9 +92,14 @@ void normalize(double x[], int n);
 void round(double x[], int n);
 =======
 void normalize(double x[], int n);
+<<<<<<< HEAD
+void round(double x[], int n);
+void square(double x[], int n); //Kalani Pigao
+=======
 void round(double x[], int n); //Anisha Shin
 >>>>>>> bf961feddddd29d373294f93d8ef056f9f33fc1a
 void square(double x[], int n);
+>>>>>>> bf961feddddd29d373294f93d8ef056f9f33fc1a
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
 void reverse(int x[], int n);
