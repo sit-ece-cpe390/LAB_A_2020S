@@ -152,6 +152,7 @@ int main() {
 	cout << prod(3, 20) << '\n'; // just note whether you think these are right
 	cout << prod(3, 30) << '\n'; // if it overflows, you don't have to fix it
 	cout << prod(3, 100) << '\n'; 
+	
 	cout << sumsq(1, 5) << '\n';
 	cout << "countPrimes(1,100): " << countPrimes(1, 100) << '\n';
 	cout << "countPrimes(1,1000000): " << countPrimes(1, 1000000) << '\n';
@@ -295,7 +296,39 @@ uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 		sum += i;
 	return sum;
 }; 
-52dfe0555e49d8d5
+
+
+double mean(double a, double b){
+	double m = (a+b)*0.5;
+	return m;
+};
+
+
+bool isPrime(uint32_t p); { //Sean Melone
+	for (int i = 2; i <= p; i++){
+		if(p % i == 0){
+			return false;
+			break;
+		}
+	}
+	return true;
+
+
+uint32_t sumsq(uint32_t a, uint32_t b){
+	return (a*a)+(b*b);
+	}
+
+};
+uint32_t countPrimes(uint32_t a, uint32_t b) { // James Parisi
+	uint32_t count = 0;
+	for (uint32_t i = a; a <= b; a++) {
+		if(isPrime(i)) {
+count++;
+		}
+	}
+	return count;
+
+
 
 uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 	uint32_t counter = 0;
@@ -307,15 +340,13 @@ uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 			return counter;
 		}
 	}
-<<<<<<< HEAD
+
 };
 
 double hypot(double a, double b) {
 	return sqrt(a * a + b * b)
 }
-=======
 
->>>>>>> fce2061dafe77a91ce6cd1dddb7a6416714073ad
 
 // ARRAY PROBLEMS
 
@@ -345,6 +376,17 @@ return d;
 void round(double x[], int n);//Qingyao Fan
 void round(double x[], int n);//Qingyao Fan
 =======
+
+
+int min(int x[];int n){
+	int small = x[0];
+	for (int i=0; i<n; i++){
+		if (small > x[i]){
+			small = x[i];
+		}
+	}
+	return small;
+}
 
 double prod(int x[], int n){ //James Parisi
 	double product = 1
