@@ -171,6 +171,7 @@ void print(const int x[], int n) {
 int main() {
 	cout << sum(1, 3) << ' ' << sum(1, 100) << '\n'; // should work no problem, right?
 	cout << sum(1, 1000000) << '\n'; // what should this be? Don't assume it's right, check!
+					 // this will overflow for the 1-1000000 input.
 
 	cout << prod(2, 5) << '\n'; // 2*3*4*5 = 120
 	cout << prod(3, 10) << '\n';
@@ -309,9 +310,16 @@ int main() {
 
 // NON-ARRAY PROBLEMS
 
-uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
-	return a + b;
+uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner 
+	uint32_t sum = 0;	       // This function will overflow for the 1-1000000 input.
+	for (int i = a; i <= b; i++)
+		sum += i;
+	return sum;
 }; 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 43a1b5f37d0a25ef6892505752dfe0555e49d8d5
 double mean(double a, double b){
 	double m = (a+b)*0.5;
 	return m;
@@ -335,7 +343,10 @@ count++;
 		}
 	}
 	return count;
+<<<<<<< HEAD
+=======
 };
+>>>>>>> 43a1b5f37d0a25ef6892505752dfe0555e49d8d5
 
 uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 	uint32_t counter = 0;
@@ -347,11 +358,15 @@ uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 			return counter;
 		}
 	}
+<<<<<<< HEAD
 };
 
 double hypot(double a, double b) {
 	return sqrt(a * a + b * b)
 }
+=======
+
+>>>>>>> fce2061dafe77a91ce6cd1dddb7a6416714073ad
 
 // ARRAY PROBLEMS
 
