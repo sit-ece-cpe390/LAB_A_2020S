@@ -30,11 +30,15 @@ uint32_t lcm(uint32_t a, uint32_t b); //Anisha Shin
 double fact(uint32_t n); //Logan Smith
 <<<<<<< HEAD
 uint64_t sum(uint32_t n);
+<<<<<<< HEAD
+double hypot(double a, double b); //Kalani Pigao
+=======
 double hypot(double a, double b);
 =======
 uint64_t sum(uint32_t n); //Andrew DeSanti
 double hypot(double a, double b): //Kalani Pigao
 >>>>>>> 9c73957f27dec8092aa5c94611a67b3cfca82341
+>>>>>>> a088655361addf68bb987b3ab5f56be8b29eaa08
 double diffsq(double a, double b);
 double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c);
@@ -289,6 +293,12 @@ int main() {
 uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 	return a + b;
 }; 
+<<<<<<< HEAD
+double mean(double a, double b){
+	double m = (a+b)*0.5;
+	return m;
+};
+=======
 
 uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 	uint32_t counter = 0;
@@ -302,6 +312,7 @@ uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 	}
 }
 
+>>>>>>> a088655361addf68bb987b3ab5f56be8b29eaa08
 // ARRAY PROBLEMS
 
 double mean(int x[], int n){ // Nathan Renner
