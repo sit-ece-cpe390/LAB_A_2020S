@@ -24,13 +24,12 @@ uint32_t lcm(uint32_t a, uint32_t b);
 =======
 uint32_t gcd(uint32_t a, uint32_t b);
 uint32_t lcm(uint32_t a, uint32_t b); //Anisha Shin
->>>>>>> bf961feddddd29d373294f93d8ef056f9f33fc1a
 double fact(uint32_t n);
-uint64_t sum(uint32_t n); //Andrew DeSanti
+uint64_t sum(uint32_t n);
 double hypot(double a, double b): //Kalani Pigao
 double diffsq(double a, double b);
 double mean(int a, int b); //Serafin Fernandez
-double mean(int a, int b, int c);
+double mean(int a, int b, int c); //Andrew DeSanti
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
 /*
@@ -277,6 +276,10 @@ int main() {
 uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 	return a + b;
 }; 
+
+double mean(int a, int b, int c) { //Andrew DeSanti
+	return (a + b + c)/3;
+}
 
 
 // ARRAY PROBLEMS
