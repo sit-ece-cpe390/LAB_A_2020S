@@ -298,9 +298,7 @@ double mean(double a, double b){
 	double m = (a+b)*0.5;
 	return m;
 };
-=======
 
-<<<<<<< HEAD
 uint32_t countPrimes(uint32_t a, uint32_t b) { // James Parisi
 	uint32_t count = 0;
 	for (uint32_t i = a; a <= b; a++) {
@@ -309,10 +307,8 @@ uint32_t countPrimes(uint32_t a, uint32_t b) { // James Parisi
 		}
 	}
 	return count;
+};
 
-
-
-=======
 uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 	uint32_t counter = 0;
 	bool lcmFound = false;
@@ -323,10 +319,7 @@ uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 			return counter;
 		}
 	}
-}
->>>>>>> 4ee69cbdaf1229f5785038596eec20b35f6e328f
-
->>>>>>> a088655361addf68bb987b3ab5f56be8b29eaa08
+};
 // ARRAY PROBLEMS
 
 double mean(int x[], int n){ // Nathan Renner
