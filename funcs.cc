@@ -367,6 +367,13 @@ double hypot(double a, double b) {
 }
 
 
+double mean(int a, int b, int c) //Andrew DeSanti
+{
+
+	return(a + b + c)/3.0;
+
+}
+
 // ARRAY PROBLEMS
 
 double mean(int x[], int n){ // Nathan Renner
@@ -435,3 +442,15 @@ int sum(int x[], int n){ // Sean Melone
 	}
 	return sum;
 };
+
+
+void squareRoot(double x[], int n) //Andrew DeSanti
+{
+
+	for(int i=0;i< n; i++)
+	{
+		x[i]=sqrt(x[i]);
+	}
+
+}
+
