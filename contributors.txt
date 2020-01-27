@@ -1,15 +1,17 @@
 Chloe Sharpe
-=======
 Nathan Renner
 Edgar Castaneda-Vargas
->>>>>>> e08fe76d137ac3df092238eed12e80c45b41e548
-=======
 Sylvia Boamah
 Nathan Renner
 Edgar Castaneda-Vargas
 Matt Ross
 Kalani Pigao
 James Parisi
+<<<<<<< HEAD
 >>>>>>> d61e8e103f63de41eb3b9394760a3aa1d357df3d
 Andrew DeSanti
+=======
+Serafin Fernandez
+Anisha Shin
+>>>>>>> 9ecb5b0cafc352b376a9be71dd0652d499b663a7
 
