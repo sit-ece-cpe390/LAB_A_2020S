@@ -93,6 +93,7 @@ int sum(int x[], int n); //Sean Melone
 void demean(double x[], int n);
 int sum(int x[], int n);
 void demean(double x[], int n); //Chloe Sharpe
+void round(double x[], int n); 
 void round(double x[], int n);//Qingyao Fan
 void square(double x[], int n);//Kalani Pigao
 void normalize(double x[], int n); //Sylvia Boamah
@@ -104,9 +105,7 @@ void square(double x[], int n); //Kalani Pigao
 void round(double x[], int n); //Anisha Shin
 void squareRoot(double x[], int n);//Andrew DeSanti
 void square(double x[], int n);
-<<<<<<< HEAD
 void squareRoot(double x[], int n);
-=======
 void square(double x[], int n); //Logan Smith
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
@@ -120,7 +119,7 @@ void reverse(char s[]);
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
-void lowercase(char s[]);
+void lowercase(char s[]);//Qingyao Fan
 
 double taylorSeriesSine(double x);
 double taylorSeriesCosine(double x);
@@ -280,11 +279,9 @@ int main() {
 
 }
 
-<<<<<<< HEAD
 viod squareRoot{
 
 
-=======
 // NON-ARRAY PROBLEMS
 
 uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner 
@@ -364,7 +361,7 @@ double mean(int x[], int n){ // Nathan Renner
 	return sum/4.0;	
 }; 
 
-int max(int x[], int n)
+int max(int x[], int n) // Edgar Castaneda-Vargas
 {
 	int max_value = INT_MIN;
 
@@ -381,7 +378,6 @@ int max(int x[], int n)
 
 
 
-double mean(int a, int b, int c);//Qingyao Fan
 
 double mean(int a, int b, int c){
 int d;
@@ -390,11 +386,9 @@ d=d/3;
 return d;
 };//Qingyao Fan
 
+void lowercase(char s[]);//Qingyao Fan
 
 
-void round(double x[], int n);//Qingyao Fan
-void round(double x[], int n);//Qingyao Fan
-=======
 
 
 int min(int x[];int n){
@@ -405,7 +399,7 @@ int min(int x[];int n){
 		}
 	}
 	return small;
-}
+};
 
 double prod(int x[], int n){ //James Parisi
 	double product = 1
@@ -414,7 +408,6 @@ double prod(int x[], int n){ //James Parisi
 	}
 	return product;
 };
->>>>>>> 795c236247703a1710cffcdb87bdca5a159b0725
 
 int sum(int x[], int n){ // Sean Melone
 	int sum = 0;
