@@ -304,9 +304,8 @@ uint64_t prod(uint32_t a, uint32_t b)
 	return product;
 }
 
-double mean(double a, double b){
+double mean(double a, double b){// Serafin Fernandez
 	double m = (a+b)*0.5;
-	cout <<m;
 	return m;
 };
 
@@ -423,3 +422,13 @@ int sum(int x[], int n){ // Sean Melone
 	}
 	return sum;
 };
+uint32_t countEvens(const int x[], int n){// Serafin Fernandez
+	uint32_t evens =0;
+	for (int i =0; i<n;){
+		if (x[i] % 2== 0){
+			evens ++;
+		}
+		i++;
+	}
+	return evens;
+}
