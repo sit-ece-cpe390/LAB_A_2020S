@@ -12,12 +12,19 @@ uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 	return a + b;
 }; 
 uint64_t prod(uint32_t a, uint32_t b);
+uint32_t sumsq(uint32_t a, uint32_t b);
+uint32_t countPrimes(uint32_t a, uint32_t b); //James Parisi
 uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla 
 uint32_t countPrimes(uint32_t a, uint32_t b);
 bool isPrime(uint32_t p); // Sean Melone
 void swap(uint32_t& a, uint32_t& b);
+<<<<<<< HEAD
 uint32_t gcd(uint32_t a, uint32_t b); //Sylvia Boamah
 uint32_t lcm(uint32_t a, uint32_t b); 
+=======
+uint32_t gcd(uint32_t a, uint32_t b);
+uint32_t lcm(uint32_t a, uint32_t b); //Anisha Shin
+>>>>>>> bf961feddddd29d373294f93d8ef056f9f33fc1a
 double fact(uint32_t n);
 uint64_t sum(uint32_t n);
 double hypot(double a, double b);
@@ -74,13 +81,13 @@ double mean(int x[], int n){ // Nathan Renner
 }; 
 int max(int x[], int n);
 int min(int x[], int n); //Joshua Hornilla 
+double prod(int x[], int n); //James Parisi
 double prod(int x[], int n);
-<<<<<<< HEAD
 int sum(int x[], int n); //Sean Melone
 void demean(double x[], int n);
-=======
 int sum(int x[], int n);
 void demean(double x[], int n); //Chloe Sharpe
+<<<<<<< HEAD
 <<<<<<< HEAD
 void normalize(double x[], int n); //Sylvia Boamah
 =======
@@ -88,6 +95,10 @@ void normalize(double x[], int n); //Sylvia Boamah
 void normalize(double x[], int n);
 >>>>>>> 69065503247b2b98d7d58afd9207a6bc5579f54d
 void round(double x[], int n);
+=======
+void normalize(double x[], int n);
+void round(double x[], int n); //Anisha Shin
+>>>>>>> bf961feddddd29d373294f93d8ef056f9f33fc1a
 void square(double x[], int n);
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
