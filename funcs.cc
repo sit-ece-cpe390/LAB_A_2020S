@@ -82,6 +82,7 @@ void round(double x[], int n);
 void square(double x[], int n); //Kalani Pigao
 void round(double x[], int n); //Anisha Shin
 void square(double x[], int n);
+void square(double x[], int n); //Logan Smith
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
 void reverse(int x[], int n);
