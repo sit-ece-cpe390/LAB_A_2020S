@@ -30,8 +30,13 @@ uint32_t gcd(uint32_t a, uint32_t b);
 uint32_t lcm(uint32_t a, uint32_t b); //Anisha Shin
 >>>>>>> bf961feddddd29d373294f93d8ef056f9f33fc1a
 double fact(uint32_t n);
+<<<<<<< HEAD
 uint64_t sum(uint32_t n);
 double hypot(double a, double b);
+=======
+uint64_t sum(uint32_t n); //Andrew DeSanti
+double hypot(double a, double b): //Kalani Pigao
+>>>>>>> 9c73957f27dec8092aa5c94611a67b3cfca82341
 double diffsq(double a, double b);
 double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c);
@@ -105,9 +110,13 @@ void round(double x[], int n);
 void square(double x[], int n); //Kalani Pigao
 void round(double x[], int n); //Anisha Shin
 >>>>>>> bf961feddddd29d373294f93d8ef056f9f33fc1a
+<<<<<<< HEAD
+void squareRoot(double x[], int n);//Andrew DeSanti
+=======
 void square(double x[], int n);
 void square(double x[], int n); //Logan Smith
 void squareRoot(double x[], int n);
+>>>>>>> 0d56a2dfc5a43e9971f8905e6d173f39664bf73d
 uint32_t strip(double x[], uint32_t n, double a, double b);
 void reverse(int x[], int n);
 uint32_t randomElement(const int x[], int n);
