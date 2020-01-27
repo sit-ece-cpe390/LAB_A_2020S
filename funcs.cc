@@ -14,17 +14,22 @@ uint32_t sumsq(uint32_t a, uint32_t b);
 uint32_t countPrimes(uint32_t a, uint32_t b); //James Parisi
 uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla 
 uint32_t countPrimes(uint32_t a, uint32_t b);
-bool isPrime(uint32_t p);
-void swap(uint32_t& a, uint32_t& b); //Chloe Sharpe
+bool isPrime(uint32_t p); //Chloe Sharpe
+void swap(uint32_t& a, uint32_t& b);
 bool isPrime(uint32_t p); // Sean Melone
 void swap(uint32_t& a, uint32_t& b);
+<<<<<<< HEAD
+uint32_t gcd(uint32_t a, uint32_t b); //Sylvia Boamah
+uint32_t lcm(uint32_t a, uint32_t b); 
+=======
 uint32_t gcd(uint32_t a, uint32_t b);
 uint32_t lcm(uint32_t a, uint32_t b); //Anisha Shin
+>>>>>>> bf961feddddd29d373294f93d8ef056f9f33fc1a
 double fact(uint32_t n);
 uint64_t sum(uint32_t n);
-double hypot(double a, double b);
+double hypot(double a, double b): //Kalani Pigao
 double diffsq(double a, double b);
-double mean(int a, int b);
+double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c);
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
@@ -77,14 +82,27 @@ int sum(int x[], int n); //Sean Melone
 void demean(double x[], int n);
 int sum(int x[], int n);
 void demean(double x[], int n); //Chloe Sharpe
+<<<<<<< HEAD
+<<<<<<< HEAD
+void normalize(double x[], int n); //Sylvia Boamah
+=======
+>>>>>>> edee8bf9ff3eaaa7d17b93aee9adeb94c706c84a
 void normalize(double x[], int n);
+>>>>>>> 69065503247b2b98d7d58afd9207a6bc5579f54d
+void round(double x[], int n);
+=======
+void normalize(double x[], int n);
+void round(double x[], int n);
+void square(double x[], int n); //Kalani Pigao
 void round(double x[], int n); //Anisha Shin
+>>>>>>> bf961feddddd29d373294f93d8ef056f9f33fc1a
 void square(double x[], int n);
+void square(double x[], int n); //Logan Smith
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
 void reverse(int x[], int n);
 uint32_t randomElement(const int x[], int n);
-uint32_t countEvens(const int x[], int n);
+uint32_t countEvens(const int x[], int n); //Serafin Fernandez
 void addToEach(int x[], int n, int delta);
 
 void removeVowels(char s[]);
