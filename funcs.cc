@@ -440,14 +440,12 @@ int sum(int x[], int n){ // Sean Melone
 		sum += x[i];
 	}
 	return sum;
-
+}
 void square(double x[], int n){ //Kalani Pigao
 	for (int i = 0; i < n; i++){
 		x[i] = x[i] *x[i];
 	}
 }
-
-};
 
 void squareRoot(double x[], int n) //Andrew DeSanti
 {
