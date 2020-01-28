@@ -924,6 +924,7 @@ int sum(int x[], int n){ // Sean Melone
 		sum += x[i];
 	}
 	return sum;
+}
 
 void square(double x[], int n){ //Kalani Pigao
 	for (int i = 0; i < n; i++){
@@ -931,8 +932,6 @@ void square(double x[], int n){ //Kalani Pigao
 	}
 }
 
-};
-<<<<<<< HEAD
 uint32_t countEvens(const int x[], int n){// Serafin Fernandez
 	uint32_t evens =0;
 	for (int i =0; i<n;){
@@ -943,7 +942,6 @@ uint32_t countEvens(const int x[], int n){// Serafin Fernandez
 	}
 	return evens;
 }
-=======
 
 void squareRoot(double x[], int n) //Andrew DeSanti
 {
@@ -981,5 +979,3 @@ void round(double x[], int n) { //Anisha Shin
 		}
 	}
 }	       
->>>>>>> f57a7c8555ed4383333c48b68d8f48677c128b30
->>>>>>> 82b288585cd0b917580393001482c6279ecb5048
