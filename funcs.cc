@@ -387,16 +387,12 @@ return d;
 }//Qingyao Fan
 	
 
-<<<<<<< HEAD
-void round(double x[], int n);//Qingyao Fan
-void round(double x[], int n);//Qingyao Fan
-=======
 double taylorSeriesSine(double x){
 double a;
-a += pow (-1.0, x) * pow (a, 2*x+1) / factorial(2*n+1);
+a += pow (-1.0, x) * pow (a, 2*x+1) / factorial(2*x+1);
 return a;
 }//Qingyao Fan
->>>>>>> da1838d7d601e4fa901740d1040aab03a74dfe9e
+
 
 
 
@@ -416,12 +412,8 @@ double prod(int x[], int n){ //James Parisi
 		product *= x[i];
 	}
 	return product;
-<<<<<<< HEAD
 };
 
-=======
-}
->>>>>>> da1838d7d601e4fa901740d1040aab03a74dfe9e
 
 int sum(int x[], int n){ // Sean Melone
 	int sum = 0;
