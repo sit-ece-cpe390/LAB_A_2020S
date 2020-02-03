@@ -70,30 +70,14 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 // array problems
 double mean(int x[], int n); // Nathan Renner
 int max(int x[], int n); // Edgar Castaneda-Vargas
-int min(int x[], int n);
-int max(int x[], int n);
-int max(int x[], int n); // Matt Ross
 int min(int x[], int n); //Joshua Hornilla 
 double prod(int x[], int n); //James Parisi
-double prod(int x[], int n);
 int sum(int x[], int n); //Sean Melone
-void demean(double x[], int n);
-int sum(int x[], int n);
 void demean(double x[], int n); //Chloe Sharpe
-void round(double x[], int n);
 void square(double x[], int n);//Kalani Pigao
 void normalize(double x[], int n); //Sylvia Boamah
-void normalize(double x[], int n);
-void round(double x[], int n);
-void normalize(double x[], int n);
-void round(double x[], int n);
-void square(double x[], int n); //Kalani Pigao
 void round(double x[], int n); //Anisha Shin
 void squareRoot(double x[], int n);//Andrew DeSanti
-void square(double x[], int n);
-void squareRoot(double x[], int n);
-void square(double x[], int n);
-void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
 void reverse(int x[], int n); //Logan Smith
 uint32_t randomElement(const int x[], int n);
