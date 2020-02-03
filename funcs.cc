@@ -1,4 +1,4 @@
-I/*
+/*
 	Lab1 Team Programming 
 	Author: Dov Kruger
 
@@ -24,7 +24,7 @@ double diffsq(double a, double b);
 double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c); //Andrew DeSanti
 uint64_t sum(uint32_t n); //Andrew DeSanti
-double hypot(double a, double b):: //Kalani Pigao
+double hypot(double a, double b); //Kalani Pigao
 double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c);//Qingyao Fan
 bool pythagoreantriple(double a, double b);
@@ -56,7 +56,7 @@ class Vec3d {
 public:
 	double x,y,z;
 	Vec3d(double x, double y, double z) : x(x), y(y), z(z) {}
-	friend ostream& operator<<(ostream& s, const Vec3d& iv) {
+	friend ostream &operator<<(ostream& s, const Vec3d& v) {
 		return s << v.x << "," << v.y << "," << v.z;
 	}
 };
@@ -264,8 +264,6 @@ int main() {
 	cout << myhash("hash a longer string") << '\n';
 
 }
-
-void squareRoot{
 
 // NON-ARRAY PROBLEMS
 
