@@ -84,12 +84,12 @@ uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n); //Serafin Fernandez
 void addToEach(int x[], int n, int delta);
 
-void removeVowels(char s[]); //Matt Ross
+void removeVowels(char s[]);
 void reverse(char s[]);
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]); 
 uint32_t myhash(const char s[]);
-void lowercase(char s[]);
+void lowercase(char s[]); //Matt Ross
 
 double taylorSeriesSine(double x);//Qingyao Fan
 double taylorSeriesCosine(double x);
@@ -481,4 +481,14 @@ void round(double x[], int n) { //Anisha Shin
 			}
 		}
 	}
-}	      
+}
+
+void lowercase(char s[]){ //Matt Ross
+	int n = sizeof(s);
+	for(int i=0; i<n; i++){
+		if(s[i] >= 'A' && s[i] <= 'Z'){
+			s[i] +=32;
+		}
+		cout << s[i] << "\n";
+	}
+}
