@@ -289,7 +289,7 @@ uint64_t prod(uint32_t a, uint32_t b)
 double mean(double a, double b){// Serafin Fernandez
 	double m = (a+b)*0.5;
 	return m;
-};
+}
 
 void swap(uint32_t& a, uint32_t& b) { //Chloe Sharpe
 	int c = a;
