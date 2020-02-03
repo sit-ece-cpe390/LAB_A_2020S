@@ -11,39 +11,24 @@
 using namespace std;
 uint32_t sum(uint32_t a, uint32_t b); //Nathan Renner
 uint64_t prod(uint32_t a, uint32_t b); //Edgar Castaneda-Vargas
-uint32_t sumsq(uint32_t a, uint32_t b);
-uint64_t prod(uint32_t a, uint32_t b);
-uint32_t sum(uint32_t a, uint32_t b); // Nathan Renner 
+uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla
 uint64_t prod(uint32_t a, uint32_t b); //Matt Ross
-uint32_t sumsq(uint32_t a, uint32_t b);
 uint32_t countPrimes(uint32_t a, uint32_t b){ //James Parisi
-uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla 
-uint32_t countPrimes(uint32_t a, uint32_t b);
-bool isPrime(uint32_t p);
 void swap(uint32_t& a, uint32_t& b); //Chloe Sharpe
 bool isPrime(uint32_t p); // Sean Melone
-void swap(uint32_t& a, uint32_t& b);
 uint32_t gcd(uint32_t a, uint32_t b); //Sylvia Boamah
-uint32_t lcm(uint32_t a, uint32_t b); 
 uint32_t lcm(uint32_t a, uint32_t b); //Anisha Shin
-double fact(uint32_t n);
-uint64_t sum(uint32_t n);
+double fact(uint32_t n); //Logan Smith
 double hypot(double a, double b); //Kalani Pigao
 double diffsq(double a, double b);
 double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c); //Andrew DeSanti
-double hypot(double a, double b);
-uint64_t sum(uint32_t n);
-double hypot(double a, double b); //Kalani Pigao
-double hypot(double a, double b);
 uint64_t sum(uint32_t n); //Andrew DeSanti
-double hypot(double a, double b):: //Kalani Pigao
-double diffsq(double a, double b);
+double hypot(double a, double b); //Kalani Pigao
 double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c);//Qingyao Fan
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
-double fact(uint32_t n); //Logan Smith
 /*
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
@@ -71,7 +56,7 @@ class Vec3d {
 public:
 	double x,y,z;
 	Vec3d(double x, double y, double z) : x(x), y(y), z(z) {}
-	friend ostream& operator<<(ostream& s, const Vec3d& iv) {
+	friend ostream &operator<<(ostream& s, const Vec3d& v) {
 		return s << v.x << "," << v.y << "," << v.z;
 	}
 };
@@ -87,7 +72,6 @@ double mean(int x[], int n); // Nathan Renner
 int max(int x[], int n); // Edgar Castaneda-Vargas
 int min(int x[], int n);
 int max(int x[], int n);
-double mean(int x[], int n); // Nathan Renner 
 int max(int x[], int n); // Matt Ross
 int min(int x[], int n); //Joshua Hornilla 
 double prod(int x[], int n); //James Parisi
@@ -108,10 +92,10 @@ void round(double x[], int n); //Anisha Shin
 void squareRoot(double x[], int n);//Andrew DeSanti
 void square(double x[], int n);
 void squareRoot(double x[], int n);
-void square(double x[], int n); //Logan Smith
+void square(double x[], int n);
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
-void reverse(int x[], int n);
+void reverse(int x[], int n); //Logan Smith
 uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n); //Serafin Fernandez
 void addToEach(int x[], int n, int delta);
@@ -280,8 +264,6 @@ int main() {
 
 }
 
-void squareRoot{
-
 // NON-ARRAY PROBLEMS
 
 uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner 
@@ -304,9 +286,8 @@ uint64_t prod(uint32_t a, uint32_t b)
 	return product;
 }
 
-double mean(double a, double b){
+double mean(double a, double b){// Serafin Fernandez
 	double m = (a+b)*0.5;
-	cout <<m;
 	return m;
 };
 
@@ -363,6 +344,16 @@ double mean(int a, int b, int c) //Andrew DeSanti
 
 	return(a + b + c)/3.0;
 
+}
+
+double fact(uint32_t n) //Logan Smith
+{
+	int product = 1;
+	for(int i = 1; i <= n; i++)
+	{
+		product *= i;
+	}
+	return product;
 }
 
 // ARRAY PROBLEMS
@@ -442,6 +433,7 @@ int sum(int x[], int n){ // Sean Melone
 		sum += x[i];
 	}
 	return sum;
+}
 
 void square(double x[], int n){ //Kalani Pigao
 	for (int i = 0; i < n; i++){
@@ -449,7 +441,16 @@ void square(double x[], int n){ //Kalani Pigao
 	}
 }
 
-};
+uint32_t countEvens(const int x[], int n){// Serafin Fernandez
+	uint32_t evens =0;
+	for (int i =0; i<n;){
+		if (x[i] % 2== 0){
+			evens ++;
+		}
+		i++;
+	}
+	return evens;
+}
 
 void squareRoot(double x[], int n) //Andrew DeSanti
 {
@@ -458,18 +459,17 @@ void squareRoot(double x[], int n) //Andrew DeSanti
 	{
 		x[i]=sqrt(x[i]);
 	}
-
 }
 
-double fact(uint32_t n) //Logan Smith
+void reverse(int x[]; int n) //Logan Smith
 {
-	int product = 1;
-	for(int i = 1; i <= n; i++)
+	for(int i = 0; i < n/2; i++)
 	{
-		product *= i;
+		int a = x[i];
+		x[i] = x[(n-1) - i];
+		x[(n-1) - i] = a;
 	}
-	return product;
-}
+}	
 
 void round(double x[], int n) { //Anisha Shin
  	for (int i = 0; i < n; i++) {
