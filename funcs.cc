@@ -27,7 +27,7 @@ uint64_t sum(uint32_t n); //Andrew DeSanti
 double hypot(double a, double b); //Kalani Pigao
 double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c);//Qingyao Fan
-bool pythagoreantriple(double a, double b);
+bool pythagoreantriple(double a, double b); //Matt Ross
 double trigIdentity(double x);
 /*
 	note: this function uses pass by reference. Compute the answer and assign
@@ -103,7 +103,7 @@ void addToEach(int x[], int n, int delta);
 void removeVowels(char s[]);
 void reverse(char s[]);
 bool isPalindrome(const char s[]);
-uint32_t checksum(const char s[]);
+uint32_t checksum(const char s[]); 
 uint32_t myhash(const char s[]);
 void lowercase(char s[]);
 
