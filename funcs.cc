@@ -356,7 +356,7 @@ uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 		}
 	}
 
-};
+}
 
 double hypot(double a, double b) { //Kalani Pigao
 	return sqrt(a * a + b * b)
