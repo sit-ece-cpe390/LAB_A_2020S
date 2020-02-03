@@ -84,7 +84,7 @@ uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n); //Serafin Fernandez
 void addToEach(int x[], int n, int delta);
 
-void removeVowels(char s[]);
+void removeVowels(char s[]); //Matt Ross
 void reverse(char s[]);
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]); 
