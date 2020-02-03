@@ -11,42 +11,24 @@
 using namespace std;
 uint32_t sum(uint32_t a, uint32_t b); //Nathan Renner
 uint64_t prod(uint32_t a, uint32_t b); //Edgar Castaneda-Vargas
-uint32_t sumsq(uint32_t a, uint32_t b);
-uint64_t prod(uint32_t a, uint32_t b);
-uint32_t sum(uint32_t a, uint32_t b); // Nathan Renner 
+uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla
 uint64_t prod(uint32_t a, uint32_t b); //Matt Ross
-uint32_t sumsq(uint32_t a, uint32_t b);
 uint32_t countPrimes(uint32_t a, uint32_t b){ //James Parisi
-uint32_t sumsq(uint32_t a, uint32_t b); //Joshua Hornilla 
-uint32_t countPrimes(uint32_t a, uint32_t b);
-bool isPrime(uint32_t p);
 void swap(uint32_t& a, uint32_t& b); //Chloe Sharpe
 bool isPrime(uint32_t p); // Sean Melone
-void swap(uint32_t& a, uint32_t& b);
 uint32_t gcd(uint32_t a, uint32_t b); //Sylvia Boamah
-uint32_t lcm(uint32_t a, uint32_t b); 
 uint32_t lcm(uint32_t a, uint32_t b); //Anisha Shin
-double fact(uint32_t n);
-uint64_t sum(uint32_t n);
-<<<<<<< HEAD
-double hypot(double a, double b): //Kalani Pigao
+double fact(uint32_t n); //Logan Smith
+double hypot(double a, double b); //Kalani Pigao
 double diffsq(double a, double b);
 double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c); //Andrew DeSanti
-=======
-double hypot(double a, double b);
-uint64_t sum(uint32_t n);
-double hypot(double a, double b); //Kalani Pigao
-double hypot(double a, double b);
 uint64_t sum(uint32_t n); //Andrew DeSanti
-double hypot(double a, double b):: //Kalani Pigao
-double diffsq(double a, double b);
+double hypot(double a, double b); //Kalani Pigao
 double mean(int a, int b); //Serafin Fernandez
 double mean(int a, int b, int c);//Qingyao Fan
->>>>>>> 300356cb1dd909ab905f236801a4b1bfc7be5f9e
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
-double fact(uint32_t n); //Logan Smith
 /*
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
@@ -74,7 +56,7 @@ class Vec3d {
 public:
 	double x,y,z;
 	Vec3d(double x, double y, double z) : x(x), y(y), z(z) {}
-	friend ostream& operator<<(ostream& s, const Vec3d& iv) {
+	friend ostream &operator<<(ostream& s, const Vec3d& v) {
 		return s << v.x << "," << v.y << "," << v.z;
 	}
 };
@@ -85,13 +67,11 @@ Vec3d cross(Vec3d v1, Vec3d v2);
 
 double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 
-
 // array problems
 double mean(int x[], int n); // Nathan Renner
 int max(int x[], int n); // Edgar Castaneda-Vargas
 int min(int x[], int n);
 int max(int x[], int n);
-double mean(int x[], int n); // Nathan Renner 
 int max(int x[], int n); // Matt Ross
 int min(int x[], int n); //Joshua Hornilla 
 double prod(int x[], int n); //James Parisi
@@ -100,8 +80,7 @@ int sum(int x[], int n); //Sean Melone
 void demean(double x[], int n);
 int sum(int x[], int n);
 void demean(double x[], int n); //Chloe Sharpe
-void round(double x[], int n); 
-void round(double x[], int n);//Qingyao Fan
+void round(double x[], int n);
 void square(double x[], int n);//Kalani Pigao
 void normalize(double x[], int n); //Sylvia Boamah
 void normalize(double x[], int n);
@@ -113,10 +92,10 @@ void round(double x[], int n); //Anisha Shin
 void squareRoot(double x[], int n);//Andrew DeSanti
 void square(double x[], int n);
 void squareRoot(double x[], int n);
-void square(double x[], int n); //Logan Smith
+void square(double x[], int n);
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
-void reverse(int x[], int n);
+void reverse(int x[], int n); //Logan Smith
 uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n); //Serafin Fernandez
 void addToEach(int x[], int n, int delta);
@@ -126,9 +105,9 @@ void reverse(char s[]);
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
-void lowercase(char s[]);//Qingyao Fan
+void lowercase(char s[]);
 
-double taylorSeriesSine(double x);
+double taylorSeriesSine(double x);//Qingyao Fan
 double taylorSeriesCosine(double x);
 double taylorSeriesE(double x);
 
@@ -206,7 +185,6 @@ int main() {
 	Vec3d earthPos(0,0,0), moonPos(384400000, 0,0);
 	double F = grav(earthMass, earthPos, moonMass, moonPos);
 	cout << "Force between earth and moon=" << F << '\n';
-
 
   // array problems
 	int arr[] = {1, 4, 3, 2};
@@ -286,9 +264,6 @@ int main() {
 
 }
 
-viod squareRoot{
-
-
 // NON-ARRAY PROBLEMS
 
 uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner 
@@ -298,10 +273,9 @@ uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 	return sum;
 }; 
 
-<<<<<<< HEAD
 double mean(int a, int b, int c) { //Andrew DeSanti
 	return (a + b + c)/3;
-=======
+
 uint64_t prod(uint32_t a, uint32_t b)
 { // Edgar Castaneda-Vargas
 	uint64_t product = 1;
@@ -312,12 +286,16 @@ uint64_t prod(uint32_t a, uint32_t b)
 	return product;
 }
 
-double mean(double a, double b){
+double mean(double a, double b){// Serafin Fernandez
 	double m = (a+b)*0.5;
-	cout <<m;
 	return m;
 };
 
+void swap(uint32_t& a, uint32_t& b) { //Chloe Sharpe
+	int c = a;
+	a = b;
+	b = c;
+};
 
 bool isPrime(uint32_t p); { //Sean Melone
 	for (int i = 2; i <= p; i++){
@@ -329,6 +307,7 @@ bool isPrime(uint32_t p); { //Sean Melone
 	return true;
 
 };
+
 uint32_t sumsq(uint32_t a, uint32_t b){
 	return (a*a)+(b*b);
 	}
@@ -344,7 +323,6 @@ uint32_t countPrimes(uint32_t a, uint32_t b) { // James Parisi
 	return count;
 }
 
-
 uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 	uint32_t counter = 0;
 	bool lcmFound = false;
@@ -355,20 +333,32 @@ uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 			return counter;
 		}
 	}
+<<<<<<< HEAD
 
 }
+=======
+};
+>>>>>>> fcc815367ebe94b86e06147628675ba615e6cda5
 
 double hypot(double a, double b) { //Kalani Pigao
 	return sqrt(a * a + b * b)
->>>>>>> 300356cb1dd909ab905f236801a4b1bfc7be5f9e
 }
-
 
 double mean(int a, int b, int c) //Andrew DeSanti
 {
 
 	return(a + b + c)/3.0;
 
+}
+
+double fact(uint32_t n) //Logan Smith
+{
+	int product = 1;
+	for(int i = 1; i <= n; i++)
+	{
+		product *= i;
+	}
+	return product;
 }
 
 // ARRAY PROBLEMS
@@ -379,6 +369,20 @@ double mean(int x[], int n){ // Nathan Renner
 		sum += x[i];
 	return sum/4.0;	
 }; 
+
+void demean(double x[], int n){ //Chloe Sharpe
+
+	double sum = 0;
+	for(int i = 0; i < n; i++){
+		sum += x[i];
+	}	
+	
+	double mean = sum/n;
+
+	for(int i = 0; i < n; i++){
+		x[i] -= mean;
+	}	
+};	
 
 int max(int x[], int n) // Edgar Castaneda-Vargas
 {
@@ -395,19 +399,19 @@ int max(int x[], int n) // Edgar Castaneda-Vargas
 }
 
 
-
-
-
 double mean(int a, int b, int c){
 int d;
 d=a+b+c;
 d=d/3;
 return d;
-};//Qingyao Fan
+}//Qingyao Fan
+	
 
-void lowercase(char s[]);//Qingyao Fan
-
-
+double taylorSeriesSine(double x){
+double a;
+a += pow (-1.0, x) * pow (a, 2*x+1) / factorial(2*n+1);
+return a;
+}//Qingyao Fan
 
 
 int min(int x[];int n){
@@ -434,6 +438,7 @@ int sum(int x[], int n){ // Sean Melone
 		sum += x[i];
 	}
 	return sum;
+}
 
 void square(double x[], int n){ //Kalani Pigao
 	for (int i = 0; i < n; i++){
@@ -441,9 +446,16 @@ void square(double x[], int n){ //Kalani Pigao
 	}
 }
 
-};
-
-<<<<<<< HEAD
+uint32_t countEvens(const int x[], int n){// Serafin Fernandez
+	uint32_t evens =0;
+	for (int i =0; i<n;){
+		if (x[i] % 2== 0){
+			evens ++;
+		}
+		i++;
+	}
+	return evens;
+}
 
 void squareRoot(double x[], int n) //Andrew DeSanti
 {
@@ -452,20 +464,17 @@ void squareRoot(double x[], int n) //Andrew DeSanti
 	{
 		x[i]=sqrt(x[i]);
 	}
-
 }
 
-=======
-double fact(uint32_t n) //Logan Smith
+void reverse(int x[]; int n) //Logan Smith
 {
-	int product = 1;
-	for(int i = 1; i <= n; i++)
+	for(int i = 0; i < n/2; i++)
 	{
-		product *= i;
+		int a = x[i];
+		x[i] = x[(n-1) - i];
+		x[(n-1) - i] = a;
 	}
-	return product;
-}
-<<<<<<< HEAD
+}	
 
 void round(double x[], int n) { //Anisha Shin
  	for (int i = 0; i < n; i++) {
@@ -483,6 +492,3 @@ void round(double x[], int n) { //Anisha Shin
 		}
 	}
 }	       
-=======
->>>>>>> 58fca298088833b5de32f8ec7ee51b68a0e7919b
->>>>>>> fd2d7ff95d37ebf8156750b98de4468d61d5cbc3
