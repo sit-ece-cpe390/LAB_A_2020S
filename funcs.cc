@@ -290,8 +290,8 @@ bool isPrime(uint32_t p); { //Sean Melone
 	}
 	return true;
 
-};
-
+}
+i
 uint32_t sumsq(uint32_t a, uint32_t b){ //Joshua Hornilla
 	return (a*a)+(b*b);
 	}
