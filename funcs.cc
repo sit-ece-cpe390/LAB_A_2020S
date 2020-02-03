@@ -321,7 +321,7 @@ bool isPrime(uint32_t p); { //Sean Melone
 	return true;
 
 
-uint32_t sumsq(uint32_t a, uint32_t b){
+uint32_t sumsq(uint32_t a, uint32_t b){ //Joshua Hornilla
 	return (a*a)+(b*b);
 	}
 
@@ -394,10 +394,10 @@ return d;
 
 void round(double x[], int n);//Qingyao Fan
 void round(double x[], int n);//Qingyao Fan
-=======
 
 
-int min(int x[];int n){
+
+int min(int x[];int n){ //Joshua Hornilla
 	int small = x[0];
 	for (int i=0; i<n; i++){
 		if (small > x[i]){
@@ -414,7 +414,7 @@ double prod(int x[], int n){ //James Parisi
 	}
 	return product;
 };
->>>>>>> 795c236247703a1710cffcdb87bdca5a159b0725
+
 
 int sum(int x[], int n){ // Sean Melone
 	int sum = 0;
