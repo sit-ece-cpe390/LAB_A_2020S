@@ -331,6 +331,13 @@ double mean(int a, int b, int c) //Andrew DeSanti
 
 }
 
+bool pythagoreantriple(double a, double b){ //Matt Ross
+    double c = sqrt( a*a + b*b );
+    if (fmod(c,0) == 0){
+        return true;
+    }
+    else return false;
+}
 double fact(uint32_t n) //Logan Smith
 {
 	int product = 1;
