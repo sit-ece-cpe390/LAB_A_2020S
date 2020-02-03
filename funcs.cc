@@ -289,7 +289,7 @@ uint64_t prod(uint32_t a, uint32_t b)
 double mean(double a, double b){// Serafin Fernandez
 	double m = (a+b)*0.5;
 	return m;
-};
+}
 
 void swap(uint32_t& a, uint32_t& b) { //Chloe Sharpe
 	int c = a;
@@ -333,7 +333,12 @@ uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 			return counter;
 		}
 	}
+<<<<<<< HEAD
+
+}
+=======
 };
+>>>>>>> fcc815367ebe94b86e06147628675ba615e6cda5
 
 double hypot(double a, double b) { //Kalani Pigao
 	return sqrt(a * a + b * b)
@@ -399,15 +404,14 @@ int d;
 d=a+b+c;
 d=d/3;
 return d;
-};//Qingyao Fan
+}//Qingyao Fan
 	
 
 double taylorSeriesSine(double x){
 double a;
 a += pow (-1.0, x) * pow (a, 2*x+1) / factorial(2*n+1);
 return a;
-};//Qingyao Fan
-void lowercase(char s[]);//Qingyao Fan
+}//Qingyao Fan
 
 
 int min(int x[];int n){
