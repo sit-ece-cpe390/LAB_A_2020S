@@ -408,15 +408,14 @@ int d;
 d=a+b+c;
 d=d/3;
 return d;
-};//Qingyao Fan
+}//Qingyao Fan
 	
 
 double taylorSeriesSine(double x){
 double a;
 a += pow (-1.0, x) * pow (a, 2*x+1) / factorial(2*n+1);
 return a;
-};//Qingyao Fan
-void lowercase(char s[]);//Qingyao Fan
+}//Qingyao Fan
 
 
 int min(int x[];int n){
