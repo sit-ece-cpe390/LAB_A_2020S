@@ -129,7 +129,7 @@ int main() {
 	cout << sum(1, 1000000) << '\n'; // what should this be? Don't assume it's right, check!
 					 // this will overflow for the 1-1000000 input.
 
-	cout << prod(2, 5) << '\n'; // 2*3*4*5 = 120
+/*	cout << prod(2, 5) << '\n'; // 2*3*4*5 = 120
 	cout << prod(3, 10) << '\n';
 	cout << prod(3, 20) << '\n'; // just note whether you think these are right
 	cout << prod(3, 30) << '\n'; // if it overflows, you don't have to fix it
@@ -185,11 +185,11 @@ int main() {
 	Vec3d earthPos(0,0,0), moonPos(384400000, 0,0);
 	double F = grav(earthMass, earthPos, moonMass, moonPos);
 	cout << "Force between earth and moon=" << F << '\n';
-
+*/
   // array problems
 	int arr[] = {1, 4, 3, 2};
 	cout << "arr avg=" << mean(arr, 4) << '\n'; // should be 2.5
-	cout << "arr max=" << max(arr, 4) << '\n'; // should be 4
+/*	cout << "arr max=" << max(arr, 4) << '\n'; // should be 4
 	cout << "arr max=" << min(arr, 4) << '\n'; // should be 1
 	cout << "arr prod=" << prod(arr, 4) << '\n'; // should be 24
 	cout << "arr sum=" << sum(arr, 4) << '\n'; // should be 10
@@ -271,8 +271,8 @@ uint32_t sum(uint32_t a, uint32_t b) { //Nathan Renner
 	for (int i = a; i <= b; i++)
 		sum += i;
 	return sum;
-}
-
+}; 
+/*
 double mean(int a, int b, int c) { //Andrew DeSanti
 	return (a + b + c)/3;
 
@@ -289,7 +289,7 @@ uint64_t prod(uint32_t a, uint32_t b)
 double mean(double a, double b){// Serafin Fernandez
 	double m = (a+b)*0.5;
 	return m;
-}
+};
 
 void swap(uint32_t& a, uint32_t& b) { //Chloe Sharpe
 	int c = a;
@@ -333,8 +333,7 @@ uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 			return counter;
 		}
 	}
-
-}
+};
 
 double hypot(double a, double b) { //Kalani Pigao
 	return sqrt(a * a + b * b)
@@ -356,7 +355,7 @@ double fact(uint32_t n) //Logan Smith
 	}
 	return product;
 }
-
+*/
 // ARRAY PROBLEMS
 
 double mean(int x[], int n){ // Nathan Renner
@@ -364,8 +363,8 @@ double mean(int x[], int n){ // Nathan Renner
 	for (int i = 0; i < n; i++)
 		sum += x[i];
 	return sum/4.0;	
-}
-
+}; 
+/*
 void demean(double x[], int n){ //Chloe Sharpe
 
 	double sum = 0;
@@ -400,14 +399,15 @@ int d;
 d=a+b+c;
 d=d/3;
 return d;
-}//Qingyao Fan
+};//Qingyao Fan
 	
 
 double taylorSeriesSine(double x){
 double a;
 a += pow (-1.0, x) * pow (a, 2*x+1) / factorial(2*n+1);
 return a;
-}//Qingyao Fan
+};//Qingyao Fan
+void lowercase(char s[]);//Qingyao Fan
 
 
 int min(int x[];int n){
@@ -488,3 +488,4 @@ void round(double x[], int n) { //Anisha Shin
 		}
 	}
 }	      
+*/ 
