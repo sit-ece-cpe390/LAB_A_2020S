@@ -308,7 +308,7 @@ bool isPrime(uint32_t p); { //Sean Melone
 
 };
 
-uint32_t sumsq(uint32_t a, uint32_t b){
+uint32_t sumsq(uint32_t a, uint32_t b){ //Joshua Hornilla
 	return (a*a)+(b*b);
 	}
 
@@ -333,12 +333,8 @@ uint32_t lcm(uint32_t a, uint32_t b) { //Anisha Shin
 			return counter;
 		}
 	}
-<<<<<<< HEAD
 
 }
-=======
-};
->>>>>>> fcc815367ebe94b86e06147628675ba615e6cda5
 
 double hypot(double a, double b) { //Kalani Pigao
 	return sqrt(a * a + b * b)
@@ -407,14 +403,20 @@ return d;
 }//Qingyao Fan
 	
 
+<<<<<<< HEAD
+void round(double x[], int n);//Qingyao Fan
+void round(double x[], int n);//Qingyao Fan
+=======
 double taylorSeriesSine(double x){
 double a;
 a += pow (-1.0, x) * pow (a, 2*x+1) / factorial(2*n+1);
 return a;
 }//Qingyao Fan
+>>>>>>> da1838d7d601e4fa901740d1040aab03a74dfe9e
 
 
-int min(int x[];int n){
+
+int min(int x[];int n){ //Joshua Hornilla
 	int small = x[0];
 	for (int i=0; i<n; i++){
 		if (small > x[i]){
@@ -430,7 +432,12 @@ double prod(int x[], int n){ //James Parisi
 		product *= x[i];
 	}
 	return product;
+<<<<<<< HEAD
+};
+
+=======
 }
+>>>>>>> da1838d7d601e4fa901740d1040aab03a74dfe9e
 
 int sum(int x[], int n){ // Sean Melone
 	int sum = 0;
