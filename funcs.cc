@@ -72,7 +72,6 @@ double mean(int x[], int n); // Nathan Renner
 int max(int x[], int n); // Edgar Castaneda-Vargas
 int min(int x[], int n);
 int max(int x[], int n);
-double mean(int x[], int n); // Nathan Renner 
 int max(int x[], int n); // Matt Ross
 int min(int x[], int n); //Joshua Hornilla 
 double prod(int x[], int n); //James Parisi
