@@ -7,5 +7,8 @@ https://docs.google.com/presentation/d/16Ohq-oheVDHdi5ifhQ-aXou5mfZpPybBxsmT1ikO
 # Slides for lab2
 https://docs.google.com/presentation/d/1sYXHU0bNwfbWJ5TbWethPO1zv9Phnv8oV-55Wyw3r4A/edit?usp=sharing
 
-#Slides for lab4
+# Slides for lab3
+https://docs.google.com/presentation/d/1DX1HaFWrOcUTgo5HCsySddqBqrWfL1631kOhZXfndXU/edit?usp=sharing
+
+# Slides for lab4
 https://github.com/sit-ece-cpe390/LAB_B_2020S/blob/master/LAB4.pptx
