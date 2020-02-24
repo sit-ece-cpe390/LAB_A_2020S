@@ -11,7 +11,8 @@ make hw1setup
 will build just the first target, which uses C++.  You can then look at the generated assembly language and hopefully learn what you need to do.
 
 Your job is to write the file add.s
-If you correctly write assembler code to add two 32 bit numbers, then your program when built should print the number 5.
+If you correctly write assembler code to add two 32 bit numbers, then your program when built 
+should print the number 5.
 
 Once you get that done, you must submit your code.  Do this with the following commands:
 
