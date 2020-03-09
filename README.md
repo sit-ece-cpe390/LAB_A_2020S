@@ -18,3 +18,6 @@ https://docs.google.com/document/d/1s5yz6-yOWbx3mFMufBvMjcfjJ0jJrOAl3TxdfvYNNbI/
 
 # Slides for lab6
 https://docs.google.com/presentation/d/180o0XnH33kmeIYAXK2gQHvnkqB4T2oOOJoNs3EcNDx8/edit?usp=sharing
+
+# Lab 7
+https://docs.google.com/document/d/1h-W-7eyiCAqTqSC5-mVHjlDet1qnHVMwKik72aSCgm0/edit?usp=sharing
