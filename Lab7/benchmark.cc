@@ -68,9 +68,14 @@ uint64_t b6(uint32_t x[], uint32_t n) {
  */
 uint64_t b7(uint32_t x[], uint32_t n) {
 	uint64_t sum = 0;
-
-
-
+for (int i=0; i<=n-1; i+=2){
+	sum += x[i];
+}
+for (int i=1; i<=n-1; i+=2){
+        sum += x[i];
+}
+	
+	
 
   return sum;
 }
@@ -83,8 +88,14 @@ uint64_t b7(uint32_t x[], uint32_t n) {
  */
 uint64_t b8(uint32_t x[], uint32_t n) {
 	uint64_t sum = 0;
+	
+	for (int i=n-1; i>=0; i-=2){
+	    sum += x[i];
+	}
+	for (int i=n-2; i>=0; i-=2){
+	    sum += x[i];
+	}
 
-  
 
   return sum;
 }
@@ -100,7 +111,19 @@ uint64_t b8(uint32_t x[], uint32_t n) {
  */
 uint64_t b9(uint32_t x[], uint32_t n) {
   uint64_t sum = 0;
-
+  
+  for (int i=0; i<=n-1; i+=4){
+      sum += x[i];
+  }
+  for (int i=1; i<=n-1; i+=4){
+      sum += x[i];
+  }  
+  for (int i=2; i<=n-1; i+=4){
+      sum += x[i];
+  }  
+  for (int i=3; i<=n-1; i+=4){
+      sum += x[i];
+  }
 
 
   
@@ -149,6 +172,12 @@ uint64_t b13(uint32_t x[], uint32_t n) {
 	compare the speed of sequential access to the speed of writing out of order
 */
 uint64_t b14(uint32_t x[], uint32_t n) {
+    for (int i=0; i<=n-1; i+=2){
+        x[i] =0;
+    }
+    for (int i=1; i<=n-1; i+=2){
+        x[i] =0;
+    }
 
   
 	return 0;
@@ -244,7 +273,7 @@ float b17(float x[], uint32_t n) {
 float b18(uint32_t n) {
 	float sum = 0;
 	for (int i = 0; i < n; i++)
-		sum += ???
+		sum += 1.0/i;
 	return sum;
 }
 
@@ -254,7 +283,7 @@ float b18(uint32_t n) {
 float b19(uint32_t n) {
 	float sum = 0;
 	for (int i = 0; i < n; i++)
-		sum += ???
+		sum += sqrt(i);
 	return sum;
 }
 
@@ -264,7 +293,7 @@ float b19(uint32_t n) {
 double b20(uint32_t n) {
 	double sum = 0;
 	for (int i = 0; i < n; i++)
-		sum += ???
+		sum += 1.0/i;
 	return sum;
 }
 
@@ -274,7 +303,7 @@ double b20(uint32_t n) {
 double b21(uint32_t n) {
 	double sum = 0;
 	for (int i = 0; i < n; i++)
-		sum += ???
+		sum += sqrt(i);
 	return sum;
 }
 
@@ -288,10 +317,11 @@ double fact(uint32_t n) { /* this is a comment*/
 
 //Write a recursive factorial function
 double fact2(int n) {
-	if ( )
-		return ???;
-	return ???;
+	if (n<=1 )
+		return 1;
+	return n*fact2(n-1);
 }
+
 
 #endif
 
@@ -355,7 +385,7 @@ void matmult3(float ans[], float a[], float b[], uint32_t n) {
 			double dot = 0;
 			for (uint32_t k = 0; k < n; k++)
 				dot += a[i][k] * b[k][j];
-			ans[i][j] = ???
+			ans[i][j] = dot;
 		}
 }
 
@@ -373,7 +403,7 @@ void matmult4(float ans[], float a[], float b[], uint32_t n) {
 			double dot = 0;
 			for (uint32_t k = 0, d = ???; k < n; k++)
 				dot += a[d] * b[e];
-			ans[c] = ???
+			ans[c] = dot;
 		}
 }
 #endif
