@@ -24,7 +24,7 @@ double deg2rad(uint32_t n) {
 */
 
 double grav(uint32_t n) {
-    constexpr double G = 6.6742E-11; // universal gravitational constant
+    //constexpr double G = 6.6742E-11; // universal gravitational constant
     double x = 0;                    // one dimensional problem. Start at x = 0
     double v = 0;                    // velocity = 0 to start
     //double r = 1.5e12;               // distance apart
