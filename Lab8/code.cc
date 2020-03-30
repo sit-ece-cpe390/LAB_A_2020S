@@ -8,10 +8,10 @@
  * Rewrite the code to take advantage this optimization.
 */
 double deg2rad(uint32_t n) {
-    const double x = 0.001;
+    //const double x = 0.001;
     double y = 1;
     for (uint32_t i = 0; i < n; i++) {
-        y = y * x * M_PI / 180;
+        y = y * 0.001 * M_PI / 180;
     }
     return y;
 }
@@ -27,15 +27,21 @@ double grav(uint32_t n) {
     constexpr double G = 6.6742E-11; // universal gravitational constant
     double x = 0;                    // one dimensional problem. Start at x = 0
     double v = 0;                    // velocity = 0 to start
-    double r = 1.5e12;               // distance apart
-    const double m1 = 5.972e24;      // earth mass
-    const double m2 = 7.34767309e22; // moon mass
-    constexpr double dt = 0.1;       // 0.1 second timestep
+    //double r = 1.5e12;               // distance apart
+    //const double m1 = 5.972e24;      // earth mass
+    //const double m2 = 7.34767309e22; // moon mass
+    //constexpr double dt = 0.1;       // 0.1 second timestep
+    
     for (uint32_t i = 0; i < n; i++) {
-        double F = G * m1 * m2 / (r * r);
-        double a = F / m1;
-        x = x + v * dt + 0.5 * a * dt * dt;
-        v = v + a * dt;
+        //double F = G * m1 * m2 / (r * r);
+        //double a = F / m1;
+        //x = x + v * dt + 0.5 * a * dt * dt;
+        //v = v + a * dt;
+        
+        //a=2.17954843e-12
+        
+        x = x + v * dt + 1.08977422e-14;
+        v = v + 2.17954843e-13;
     }
     return x;
 }
